@@ -1,0 +1,2 @@
+!function(){"use strict";document.documentElement.classList.remove("no-js"),console.log("from first.js"),console.log("from second.js"),buts=document.getElementById("list_content").getElementsByClassName("ui")}();
+//# sourceMappingURL=main.js.map

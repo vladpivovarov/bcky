@@ -1,0 +1,24 @@
+.socials__list {
+  display: flex;
+  gap: 10px;
+}
+
+.socials__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 40px;
+
+  &_vb {
+    background-image: url("../img/viber.svg");
+  }
+
+  &_wt {
+    background-image: url("../img/whatsapp.svg");
+  }
+
+  &_tg {
+    background-image: url("../img/Telegram.svg");
+  }
+}

@@ -1,0 +1,158 @@
+.quiz-wrap {
+  position: relative;
+  padding-top: 100px;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(245,250,251,1) 30%, rgba(245,250,251,1) 100%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: -1px;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(245,250,251,1) 100%);
+  }
+}
+
+.quiz-wrap__title {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.quiz-wrap__list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.quiz-wrap__item {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+
+.quiz-wrap__img-block {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.quiz-wrap__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &_1 {
+    transform: translate(-50%, -50%) scale(1.2);
+    margin-top: 10px;
+  }
+
+  &_2 {
+    transform: translate(-50%, -50%) scale(1.3);
+  }
+
+  &_2 {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.quiz-wrap__desc {
+  max-width: 220px;
+}
+
+.quiz {
+  display: flex;
+  gap: 20px;
+  padding: 60px;
+  background-color: #fff;
+}
+
+.quiz__left {
+  width: 25%;
+}
+
+.quiz__right {
+  width: 75%;
+  padding: 20px 20px 20px 80px;
+}
+
+.quiz-wrap__text {
+  margin: 10px 0 20px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.quiz__gift-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quiz__gift-icon {
+  width: 30px;
+  height: 38px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &_price {
+    background-image: url("../img/question.png");
+  }
+
+  &_pdf {
+    background-image: url("../img/lock.png");
+  }
+
+  &_gift {
+    background-image: url("../img/question.png");
+  }
+}
+
+.quiz__variants {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 60px;
+}
+
+.quiz__variant {
+  position: relative;
+  width: 270px;
+  height: 200px;
+}
+
+.quiz__variant-desc {
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.quiz__next {
+  margin-top: 40px;
+}
+
+.quiz__variant-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.quiz__variant-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.quiz__result-icon {
+ fill: red;
+}

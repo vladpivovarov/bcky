@@ -1,0 +1,38 @@
+.progressbar {
+  position: relative;
+  height: 60px;
+  padding: 7px;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #f5fafb;
+  box-shadow: 0 0 10px rgba(0,0,0,0.07) inset;
+}
+
+.progressbar__line {
+  height: 100%;
+  width: 16.66%;
+  background-image: url("../img/line.png");
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 30px;
+  opacity: 0.8;
+  animation: go 7s infinite linear;
+}
+
+.progressbar__status {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 300;
+}
+
+@keyframes go {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 296.2px 0;
+  }
+}

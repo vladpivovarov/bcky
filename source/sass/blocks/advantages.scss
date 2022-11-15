@@ -1,0 +1,12 @@
+.advantages {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 15%, rgb(255, 255, 255) 100%);
+}
+
+.advantages__container {
+  display: flex;
+}
+
+.advantages__img-block {
+  width: 60%;
+  flex-shrink: 0;
+}
