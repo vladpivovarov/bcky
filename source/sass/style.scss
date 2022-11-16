@@ -3,6 +3,8 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "fonts.scss";
+@import "jquery-ui.min.scss";
+@import "colorbox.scss";
 @import "adjustments.scss";
 
 // BLOCKS
@@ -17,3 +19,6 @@
 @import "./blocks/advantages.scss";
 @import "./blocks/price.scss";
 @import "./blocks/want.scss";
+@import "./blocks/portfolio.scss";
+@import "./blocks/photos.scss";
+@import "./blocks/dreams.scss";

@@ -1,0 +1,34 @@
+.dreams {
+  min-height: 800px;
+  background-image: url("../img/yuriybig.png");
+  background-size: auto 700px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.dreams__content {
+  max-width: 600px;
+  margin-left: 200px;
+}
+
+.dreams__mini-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.dreams__mini-icon-block {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 20px rgba(152, 212, 90, 0.5);
+  border-radius: 8px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from($green), color-stop(98%, #bad394), to(#bad394));
+}
+
+.dreams__mini-icon {
+  fill: #fff;
+}

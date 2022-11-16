@@ -146,7 +146,13 @@ const copy = () => {
       "./source/img/**",
       "./source/js/additionally/*.js",
       "./source/*.ico",
-      "./source/*.html"
+      "./source/*.html",
+      "./source/favicon/*.*",
+      "./source/files/*.*",
+      "./source/phpmailer/**/*.*",
+      "./source/*.php",
+      "./source/*.png",
+      "./source/*.webmanifest"
     ], {
       base: "./source"
     })
@@ -176,6 +182,7 @@ const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", gulp.series("htmlreplace"));
   gulp.watch("source/js/**/*.js").on("change", gulp.series("javascript"));
+  gulp.watch("source/*.php").on("change", gulp.series("copy"));
 }
 
 exports.build = gulp.series(

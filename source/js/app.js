@@ -1,9 +1,7 @@
 import checkJs from "./modules/checkJs";
-import first from "./modules/first";
-import second from "./modules/second";
+import sliderPortfolio from "./modules/sliderPortfolio";
+import zoom from "./modules/zoom";
 
 checkJs();
-first();
-second();
-
-buts = document.getElementById("list_content").getElementsByClassName("ui")
+sliderPortfolio();
+zoom();
