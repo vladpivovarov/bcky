@@ -18,6 +18,8 @@
   <script src="./js/additionally/jquery-ui.min.js" defer></script>
   <script src="./js/additionally/jquery.colorbox-min.js" defer></script>
   <script src="./js/main.js" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=60f13f6a-8908-4537-be92-ab6945c1fb02&lang=ru_RU"
+    type="text/javascript"></script>
 </head>
 
 <body>
@@ -898,9 +900,7 @@
       <section class="portfolio">
         <div class="container">
           <h2 class="title portfolio__title">
-            <span class="title__important">
-              Последние наши работы
-            </span>
+            <span class="title__important">Последние наши работы</span>
             с реальными фото
           </h2>
           <div class="portfolio__subtitle">
@@ -1002,7 +1002,7 @@
           <h2 class="title photos__title">
             и еще
             <div class="photos__num">
-              237
+              547
             </div>
             по всей России
           </h2>
@@ -1062,7 +1062,8 @@
         <div class="container dreams__container">
           <div class="dreams__content">
             <h2 class="dreams__title title">
-              Сделаем баню-бочку вашей мечты
+              Сделаем баню-бочку
+              <span class="title__important">вашей мечты</span>
             </h2>
             <p class="dreams__text">
               Меня зовут
@@ -1080,7 +1081,7 @@
               гарантии?
             </p>
             <h3 class="dreams__subtitle">
-              Понимая запросы клиента и ориентируясь в рынке наши основные задачи:
+              Понимая запросы клиента и ориентируясь в рынке, наши основные задачи:
             </h3>
             <ul class="dreams__mini-list">
               <li class="dreams__mini-item">
@@ -1131,35 +1132,226 @@
           </div>
           <ul class="dreams__list">
             <li class="dreams__item">
-              <div class="dreams__num">
-                276
+              <div class="dreams__num counting" data-count="276">
+                0
               </div>
               <div class="dreams__desc">
                 Установленных бань за 3 года работы
               </div>
             </li>
             <li class="dreams__item">
-              <div class="dreams__num">
-                40%
+              <div class="dreams__num dreams__num_percent counting" data-count="40">
+                0
               </div>
               <div class="dreams__desc">
                 Клиентов приходят по рекомендации
               </div>
             </li>
             <li class="dreams__item">
-              <div class="dreams__num">
-                100%
+              <div class="dreams__num dreams__num_percent counting" data-count="100">
+                0
               </div>
               <div class="dreams__desc">
                 Гарантия на все наши бани-бочки
               </div>
             </li>
             <li class="dreams__item">
-              <div class="dreams__num">
-                1
+              <div class="dreams__num counting" data-count="1">
+                0
               </div>
               <div class="dreams__desc">
                 День на установку бани вашей мечты
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <h2 class="title reviews__title">
+            И это все —
+            <strong class="title__strong">правда.</strong>
+          </h2>
+          <h3 class="reviews__subtitle">
+            Нас хвалят и передают контакты друзьям
+          </h3>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <img class="reviews__img" src="//img.youtube.com/vi/k3p3W3u1rT8/maxresdefault.jpg">
+              <a href="" class="reviews__link">
+                <svg class="reviews__icon" width="18px" height="18px">
+                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="reviews__item">
+              <img class="reviews__img" src="//img.youtube.com/vi/k3p3W3u1rT8/maxresdefault.jpg">
+              <a href="" class="reviews__link">
+                <svg class="reviews__icon" width="18px" height="18px">
+                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="reviews__item">
+              <img class="reviews__img" src="//img.youtube.com/vi/odue0mvp4fM/maxresdefault.jpg">
+              <a href="" class="reviews__link">
+                <svg class="reviews__icon" width="18px" height="18px">
+                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="reviews__item">
+              <img class="reviews__img" src="//img.youtube.com/vi/odue0mvp4fM/maxresdefault.jpg">
+              <a href="" class="reviews__link">
+                <svg class="reviews__icon" width="18px" height="18px">
+                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="reviews__item">
+              <img class="reviews__img" src="//img.youtube.com/vi/odue0mvp4fM/maxresdefault.jpg">
+              <a href="" class="reviews__link">
+                <svg class="reviews__icon" width="18px" height="18px">
+                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="reviews__item">
+              <img class="reviews__img" src="//img.youtube.com/vi/odue0mvp4fM/maxresdefault.jpg">
+              <a href="" class="reviews__link">
+                <svg class="reviews__icon" width="18px" height="18px">
+                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="reviews__circle">
+            <svg class="reviews__mini-icon" width="20px" height="18px">
+              <use xlink:href="./img/sprite-svg/sprite.svg#icon-arrow"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="see">
+        <div class="container">
+          <h2 class="title">
+            <span class="title__important">Увидеть вживую</span>
+            наши бани-бочки
+          </h2>
+          <div class="subtitle">
+            Наша команда стремится к полной прозрачности в работе
+          </div>
+          <div class="subsubtitle">
+            Поэтому мы с удовольстивем показываем каждую нашу баню-бочку, все их преимущества и особенности
+          </div>
+          <div class="contact">
+            <form class="contact__form">
+              <h3 class="contact__title">
+                Запишитесь на бесплатную экскурсию
+              </h3>
+              <input type="text" id="datepicker" name="data" class="contact__data">
+              <input type="text" name="phone" class="contact__input">
+              <button type="submit">Записаться</button>
+            </form>
+            <address class="contact__address">
+              <p class="contact__address-details">
+                ул. Большая
+                <br>
+                Конюшенная, д. 19/8
+              </p>
+              <p class="contact__city">Санкт-Петербург</p>
+            </address>
+            <div id="map" class="contact__map"></div>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container">
+          <h2 class="title">Вопросы и
+            <span class="title__important">ответы</span>
+          </h2>
+          <ul class="questions__list">
+            <li class="questions__item">
+              <h4 class="questions__subtitle">
+                Насколько баня бочка пожаробезопасна?
+                <svg class="questions__icon" width="20px" height="18px">
+                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-faq-arrow"></use>
+                </svg>
+              </h4>
+              <div class="questions__answer">
+                Вокруг трубы дымохода сделано проходное сечение с укладкой теплоизоляционного материала и обработкой
+                огнебиозащитным
+                составом NEOMID 450-1.
+              </div>
+            </li>
+            <li class="questions__item">
+              <h4 class="questions__subtitle">
+                Как устанавливается баня бочка?
+                <svg class="questions__icon" width="20px" height="18px">
+                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-faq-arrow"></use>
+                </svg>
+              </h4>
+              <div class="questions__answer">
+                Баня-бочка устанавливается на любую ровную поверхность таким образом, чтобы ее основания (ножки) не
+                касались
+                непосредственно земли (должна быть прокладка в виде камня, кирпича, щебня).
+              </div>
+            </li>
+            <li class="questions__item">
+              <h4 class="questions__subtitle">
+                Как быстро нагревается баня бочка?
+                <svg class="questions__icon" width="20px" height="18px">
+                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-faq-arrow"></use>
+                </svg>
+              </h4>
+              <div class="questions__answer">
+                Благодаря отсутствию углов прогревается всего за 30 минут. Малый расход дров и высокий коэффициент
+                полезного действия.
+                Держит долго температуру за счет оригинальной округлой формы. Потери тепла на 25% меньше из-за
+                отсутствия
+                углов.
+              </div>
+            </li>
+            <li class="questions__item">
+              <h4 class="questions__subtitle">
+                Можно ли париться в бане бочке зимой?
+                <svg class="questions__icon" width="20px" height="18px">
+                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-faq-arrow"></use>
+                </svg>
+              </h4>
+              <div class="questions__answer">
+                Баня-бочка может использоваться летом и зимой. В зимней бане есть свои преимущества. После парной можно
+                окунуться в
+                снег.
+              </div>
+            </li>
+            <li class="questions__item">
+              <h4 class="questions__subtitle">
+                В чем отличие стандартного дымохода от дымохода Grill’D?
+                <svg class="questions__icon" width="20px" height="18px">
+                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-faq-arrow"></use>
+                </svg>
+              </h4>
+              <div class="questions__answer">
+                Дымоход Grill’D отличается повышенной пожарной защитой, толщина пожарной изоляции стандартного дымохода
+                42мм, а дымохода
+                Grill’D 67,5мм, что снижает наружную температуру дымохода.
+                <br>
+                Дымоход Grill’D покрыт специальным термозащитной краской, которая препятствует образованию коррозии на
+                сворных швах.
+              </div>
+            </li>
+            <li class="questions__item">
+              <h4 class="questions__subtitle">
+                В чем отличие бани из ели и из кедра?
+                <svg class="questions__icon" width="20px" height="18px">
+                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-faq-arrow"></use>
+                </svg>
+              </h4>
+              <div class="questions__answer">
+                Разницы в долговечности материалов нет. Так как весь материал — и ель, и кедр — отбирается и сушится по
+                единым
+                требованиям: отсутствие синевы, грибка, обзола, плесени до влажности 8-10%.
               </div>
             </li>
           </ul>

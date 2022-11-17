@@ -1,14 +1,21 @@
 .dreams {
   min-height: 800px;
-  background-image: url("../img/yuriybig.png");
-  background-size: auto 700px;
-  background-position: right;
-  background-repeat: no-repeat;
+  background-image: url("../img/yuriybig2.png"), url("../img/bot-bg.png"),
+    linear-gradient(180deg, rgba(245,250,251,1) 0%, rgba(245,250,251,1) 80%, rgba($green,0.3) 100%);
+  background-size: 90vw auto, 100vw auto, 100vw auto;
+  background-position: right 90px, bottom center, right 0px;
+  background-repeat: no-repeat, no-repeat;
+  padding-bottom: 200px;
+}
+
+.dreams__title {
+  text-align: left;
+  line-height: 1.1;
 }
 
 .dreams__content {
   max-width: 600px;
-  margin-left: 200px;
+  margin-left: 12vw;
 }
 
 .dreams__mini-item {
@@ -31,4 +38,55 @@
 
 .dreams__mini-icon {
   fill: #fff;
+}
+
+.dreams__list {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+.dreams__item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 320px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 65px;
+    top: -25px;
+    width: 55px;
+    height: 55px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from($green), color-stop(98%, #bad394), to(#bad394));
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+}
+
+.dreams__num {
+  position: absolute;
+  z-index: 1;
+  right: 230px;
+  font-size: 55px;
+  font-weight: 600;
+  opacity: 0.9;
+
+  &_percent {
+    right: 210px;
+  }
+
+  &_percent:after {
+    content: '%';
+    font-size: 45px;
+  }
+}
+
+.dreams__desc {
+  width: 340px;
+  padding-left: 130px;
+  font-size: 16px;
 }
