@@ -1,3 +1,20 @@
 .logo {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
 
+.logo__img-block {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    border-radius: 2px;
+    height: 45%;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    background-color: rgba(#272727, .3);
+  }
 }

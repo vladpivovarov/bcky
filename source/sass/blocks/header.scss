@@ -1,7 +1,16 @@
+.header {
+  padding-top: 20px;
+}
+
+.header__logo {
+  margin-top: -20px;
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
+  align-items: top;
 }
 
 .header__socials {

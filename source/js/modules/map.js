@@ -3,13 +3,13 @@ const mapRealize = () => {
   // CONTACT VARIABLES
   const contactAddress = document.querySelector(".contact__address");
   var placemarkSize = {
-    mobile: [50, 81.5],
+    mobile: [25, 40.75],
     tablet: [50, 81.5],
     desktop: [50, 81.5]
   }
   // Стандартно - левый верхний угол изображения -> поэтому сдвигаем его
   var placemarkOffset = {
-    mobile: [-25, -81.5],
+    mobile: [-12.5, -40.75],
     tablet: [-25, -81.5],
     desktop: [-25, -81.5]
   }
@@ -42,7 +42,7 @@ const mapRealize = () => {
       }
 
       var placemark = new ymaps.Placemark([59.938635, 30.323118], {
-        hintContent: "Выставка баней-бочек от Bochky®",
+        hintContent: "Выставка бань-бочек от Bochky® Вт-Сб с 10:00 до 18:00",
         balloonContent: balloonHtml
       }, {
         iconLayout: 'default#image',

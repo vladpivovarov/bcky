@@ -29,7 +29,7 @@
         <div class="hero__container container">
           <header class="header">
             <div class="header__top">
-              <a href="./" class="logo">
+              <a href="./" class="logo header__logo">
                 <div class="logo__img-block">
                   <img class="logo__img" src="./img/100x100_2.1.svg" alt="Bochky®" width="100px" height="100px">
                 </div>
@@ -61,14 +61,14 @@
                   </li>
                 </ul>
               </div>
-              <div class="header__contact contact">
-                <div class="contact__title">
+              <div class="header__contact contacts">
+                <div class="contacts__title">
                   Звоните, мы сейчас работаем
                 </div>
-                <a href="tel:89104264159" class="contact__phone">
+                <a href="tel:89104264159" class="contacts__phone">
                   +7 (910) 426-41-59
                 </a>
-                <a href="#" class="contact__call">
+                <a href="#" class="contacts__call">
                   Позвоните мне
                 </a>
               </div>
@@ -1226,22 +1226,59 @@
             </li>
           </ul>
           <div class="reviews__circle">
-            <svg class="reviews__mini-icon" width="20px" height="18px">
+            <svg class="reviews__mini-icon" width="17px" height="18px">
               <use xlink:href="./img/sprite-svg/sprite.svg#icon-arrow"></use>
             </svg>
           </div>
         </div>
       </section>
+      <section class="ready">
+        <div class="container">
+          <h2 class="title ready__title">
+            Готовы обсудить Вашу баню
+            <span class="title__important">с надежной компанией?</span>
+          </h2>
+          <div class="ready__wrap">
+            <div class="ready__call">
+              <div class="ready__call-subtitle">
+                Звоните
+              </div>
+              <div class="ready__time">
+                Вт-Сб с 10:00 до 18:00
+              </div>
+              <div class="ready__links">
+                <a href="tel:89104264159" class="ready__link">+7 (910) 426-41-59</a>
+              </div>
+            </div>
+            <div class="ready__callme">
+              <div class="ready__callme-subtitle">
+                Или заполните форму для обратного звонка
+              </div>
+              <div class="ready__callme-desc">
+                Мы перезвоним и ответим на все Ваши вопросы
+              </div>
+            </div>
+            <form class="ready__form">
+              <input type="text" class="ready__input" name="tel" placeholder="+7 (910) ___ __ __">
+              <button type="submit">Перезвоните мне</button>
+              <div class="personal">
+                Нажимая на кнопку "Перезвоните мне" Вы соглашаетесь с
+                <a href="">условиями обработки персональных данных</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
       <section class="see">
         <div class="container">
-          <h2 class="title">
+          <h2 class="title see__title">
             <span class="title__important">Увидеть вживую</span>
             наши бани-бочки
           </h2>
-          <div class="subtitle">
+          <div class="see__subtitle">
             Наша команда стремится к полной прозрачности в работе
           </div>
-          <div class="subsubtitle">
+          <div class="see__subsubtitle">
             Поэтому мы с удовольстивем показываем каждую нашу баню-бочку, все их преимущества и особенности
           </div>
           <div class="contact">
@@ -1253,15 +1290,22 @@
               <input type="text" name="phone" class="contact__input">
               <button type="submit">Записаться</button>
             </form>
-            <address class="contact__address">
+            <address class="contact__address visually-hidden">
               <p class="contact__address-details">
                 ул. Большая
                 <br>
                 Конюшенная, д. 19/8
               </p>
               <p class="contact__city">Санкт-Петербург</p>
+              <p>
+                <strong>Вт-Сб с 10:00 до 18:00</strong>
+              </p>
             </address>
             <div id="map" class="contact__map"></div>
+            <div class="contact__subaddress">
+              Санкт-Петербург, ул. Большая Конюшенная, д. 19/8,
+              <strong>Вт-Сб с 10:00 до 18:00</strong>
+            </div>
           </div>
         </div>
       </section>
@@ -1273,19 +1317,6 @@
           <ul class="questions__list">
             <li class="questions__item">
               <h4 class="questions__subtitle">
-                Насколько баня бочка пожаробезопасна?
-                <svg class="questions__icon" width="20px" height="18px">
-                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-faq-arrow"></use>
-                </svg>
-              </h4>
-              <div class="questions__answer">
-                Вокруг трубы дымохода сделано проходное сечение с укладкой теплоизоляционного материала и обработкой
-                огнебиозащитным
-                составом NEOMID 450-1.
-              </div>
-            </li>
-            <li class="questions__item">
-              <h4 class="questions__subtitle">
                 Как устанавливается баня бочка?
                 <svg class="questions__icon" width="20px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-faq-arrow"></use>
@@ -1295,6 +1326,19 @@
                 Баня-бочка устанавливается на любую ровную поверхность таким образом, чтобы ее основания (ножки) не
                 касались
                 непосредственно земли (должна быть прокладка в виде камня, кирпича, щебня).
+              </div>
+            </li>
+            <li class="questions__item">
+              <h4 class="questions__subtitle">
+                Насколько баня бочка пожаробезопасна?
+                <svg class="questions__icon" width="20px" height="18px">
+                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-faq-arrow"></use>
+                </svg>
+              </h4>
+              <div class="questions__answer">
+                Вокруг трубы дымохода сделано проходное сечение с укладкой теплоизоляционного материала и обработкой
+                огнебиозащитным
+                составом NEOMID 450-1.
               </div>
             </li>
             <li class="questions__item">
@@ -1351,16 +1395,77 @@
               <div class="questions__answer">
                 Разницы в долговечности материалов нет. Так как весь материал — и ель, и кедр — отбирается и сушится по
                 единым
-                требованиям: отсутствие синевы, грибка, обзола, плесени до влажности 8-10%.
+                требованиям: отсутствие синевы, грибка, обзола, плесени, до влажности 8-10%.
               </div>
             </li>
           </ul>
         </div>
       </section>
     </div>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <p>Футер</p>
+        <div class="footer__top">
+          <a href="./" class="logo footer__logo">
+            <div class="logo__img-block">
+              <img class="logo__img" src="./img/100x100_2.1.svg" alt="Bochky®" width="100px" height="100px">
+            </div>
+            <div class="logo__desc">
+              Европейское качество от Bochky®
+            </div>
+          </a>
+          <div class="footer__socials socials">
+            <div class="socials__title">
+              Нажмите и начните общение
+            </div>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a href="#" class="socials__link socials__link_vb"></a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link socials__link_wt"></a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link socials__link_tg"></a>
+              </li>
+            </ul>
+          </div>
+          <a href="tel:89104264159" class="footer__phone">
+            +7 (910) 426-41-59
+          </a>
+          <button class="footer__btn">
+            Получить консультацию
+          </button>
+        </div>
+        <div class="footer__bottom">
+          <div class="copyright footer__copyright">
+            <div class="row">
+              ©
+              <span class="year">2022</span>
+              Юрий Лукиных
+            </div>
+            <div class="row">
+              Все права защищены
+            </div>
+          </div>
+
+          <div class="footer__creator">
+            Разработка сайта
+            <a href="https://t.me/webRvlad" class="footer__address">WebR</a>
+            <br>
+            <a href="https://t.me/webRvlad" class="footer__link">
+              <img src="./img/telegram.svg" alt="Связь со мной" width="27px" height="27px">
+            </a>
+            <a href="https://vk.com/vladislavpivovarov" class="footer__link">
+              <img src="./img/vk.svg" alt="Связь со мной" width="27px" height="27px">
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="author visually-hidden">
+        Разработал Владислав Пивоваров
+        Ссылка на профиль ВК - https://vk.com/vladislavpivovarov
+        Ссылка на профиль ВК - https://t.me/webRvlad
       </div>
     </footer>
   </div>
