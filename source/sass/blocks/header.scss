@@ -10,9 +10,29 @@
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  align-items: top;
+  align-items: flex-start;
 }
 
-.header__socials {
+.contacts__title {
+  font-size: 14px;
+  text-align: center;
+}
 
+.contacts__phone {
+  display: block;
+  margin-top: -3px;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.contacts__call {
+  display: block;
+  margin-top: 1px;
+  font-size: 15px;
+  text-align: center;
+  color: $green;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-style: dotted;
 }

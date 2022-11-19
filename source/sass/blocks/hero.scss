@@ -1,13 +1,132 @@
 .hero {
-  background: url("../img/bg.png") #fff;
-  background-size: cover;
+  background: url("../img/bg.png") #fff no-repeat;
+  background-size: auto 100%;
+  background-position: top right -100px;
+  background-repeat: no-repeat;
 }
 
+
 .hero__title {
-  max-width: 900px;
   font-size: 70px;
   line-height: 1.1;
   font-weight: 600;
   text-align: left;
+  opacity: 0.9;
+}
+
+.hero__wrap {
+  position: relative;
+  max-width: 800px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  min-height: 700px;
+}
+
+.hero__desc {
+  margin-top: -10px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.hero__list {
+  margin-top: 60px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.hero__item {
+  width: 27%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-weight: 400;
+}
+
+.hero__icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: $green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__icon-img {
+  fill: #fff;
+}
+
+.hero__btn-wrap {
+  margin-top: 50px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero__btn {
+  position: relative;
+  padding: 40px 50px 35px;
+  font-size: 18px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    right: -100px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/arroww.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-49deg);
+    opacity: 0.8;
+  }
+}
+
+.hero__time {
+  width: 140px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hero__play {
+  position: absolute;
+  right: -190px;
+  top: 25%;
+  width: 100px;
+  height: 100px;
+}
+
+.hero__play-link {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, #96be8e 0, $green 100%);
+  opacity: 1;
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba($green, 0.4);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba($green, 0.9);
+  }
+  70% {
+      box-shadow: 0 0 0 35px rgba($green, 0);
+  }
+  100% {
+      box-shadow: 0 0 0 0 rgba($green, 0);
+  }
+}
+
+.hero__play-icon {
+  fill: #fff;
 }
 

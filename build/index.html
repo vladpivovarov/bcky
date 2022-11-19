@@ -42,7 +42,7 @@
                   Скачать прайс-лист
                 </div>
                 <div class="btn-img__subtitle">
-                  + получить скидку 7%
+                  + получить подарок
                 </div>
               </button>
               <div class="header__socials socials">
@@ -63,7 +63,7 @@
               </div>
               <div class="header__contact contacts">
                 <div class="contacts__title">
-                  Звоните, мы сейчас работаем
+                  Звоните, Пн-Вc 10:00 - 18:00
                 </div>
                 <a href="tel:89104264159" class="contacts__phone">
                   +7 (910) 426-41-59
@@ -109,55 +109,62 @@
           </header>
           <div class="hero__wrap">
             <h1 class="hero__title title">
-              Готовая баня на вашем участке всего за
+              Готовая баня на вашем участке за
               <span class="title__color">1 день</span>
             </h1>
             <div class="hero__desc">
-              Для тех, кто хочет получить полноценную баню за короткие сроки.
-              <br>
-              Устанавливается за один день и сразу готова к использованию.
+              Для тех, кто хочет получить полноценную баню за короткие сроки
             </div>
             <ul class="hero__list">
               <li class="hero__item">
                 <div class="hero__icon">
-                  <img src="" alt="" class="hero__icon-img">
+                  <svg class="hero__icon-img" width="10px" height="10px">
+                    <use xlink:href="./img/sprite-svg/sprite.svg#icon-done"></use>
+                  </svg>
                 </div>
                 <div class="hero__mini-desc">
-                  Крупнейший производитель в мире 45 представительств в России и за рубежом
+                  Крупнейший производитель
+                  <strong>во всем мире</strong>
                 </div>
               </li>
               <li class="hero__item">
                 <div class="hero__icon">
-                  <img src="" alt="" class="hero__icon-img">
+                  <svg class="hero__icon-img" width="10px" height="10px">
+                    <use xlink:href="./img/sprite-svg/sprite.svg#icon-done"></use>
+                  </svg>
                 </div>
                 <div class="hero__mini-desc">
-                  Экспортное качество от производителя
+                  <strong>Экспортное качество</strong>
+                  от производителя
                 </div>
               </li>
               <li class="hero__item">
                 <div class="hero__icon">
-                  <img src="" alt="" class="hero__icon-img">
+                  <svg class="hero__icon-img" width="10px" height="10px">
+                    <use xlink:href="./img/sprite-svg/sprite.svg#icon-done"></use>
+                  </svg>
                 </div>
                 <div class="hero__mini-desc">
-                  12 лет на рынке и 500+ довольных клиентов
+                  12 лет на рынке и
+                  <strong>500+ довольных клиентов</strong>
                 </div>
               </li>
             </ul>
-            <button class="hero__btn">
-              Калькулятор стоимости бани-бочки
-            </button>
-            <div class="hero__time">
-              Займет не больше 1 минуты
-            </div>
-            <div class="hero__play">
-              <button class="hero__play-button">
-                <img src="" alt="Видео-презентация компании" class="video-btn__button">
+            <div class="hero__btn-wrap">
+              <button class="btn hero__btn">
+                Калькулятор стоимости бани-бочки
               </button>
-              <div class="hero__play-desc">
-                Посмотрите презентацию о нашей компании
+              <div class="hero__time">
+                Займет не больше 1 минуты
               </div>
             </div>
-
+            <div class="hero__play">
+              <button class="hero__play-link">
+                <svg class="reviews__icon" width="18px" height="18px">
+                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -210,14 +217,14 @@
           <form class="quiz">
             <aside class="quiz__left">
               <div class="quiz__author">
-                <div class="quiz__author__image-block">
-                  <img src="./img/yuriy-mini.png" width="200px" alt="Юрий Лукиных" class="quiz__author-image">
-                </div>
-                <div class="quiz__author-name">
-                  Юрий Лукиных
+                <div class="quiz__author-image-block">
+                  <img src="./img/yuriy-big-quiz.png" width="200px" alt="Юрий Лукиных" class="quiz__author-image">
                 </div>
                 <div class="quiz__author-post">
                   Руководитель компании
+                </div>
+                <div class="quiz__author-name">
+                  Юрий Лукиных
                 </div>
                 <div class="quiz__author-desc">
                   Пройдите этот тест и
@@ -275,14 +282,16 @@
               </div>
 
               <!-- Начало вопросов -->
-              <div class="quiz__question-block">
-                <div class="quiz__num-block">
-                  Вопрос
-                  <span class="quiz__num">1</span>
+              <div class="quiz__question-block quiz__question-block_open">
+                <div class="quiz__first">
+                  <div class="quiz__num-block">
+                    Вопрос
+                    <span class="quiz__num">1</span>
+                  </div>
+                  <h3 class="quiz__question">
+                    Какая форма больше нравится?
+                  </h3>
                 </div>
-                <h3 class="quiz__question">
-                  Какая форма больше нравится?
-                </h3>
                 <ul class="quiz__variants">
                   <li class="quiz__variant">
                     <label class="quiz__label">
@@ -332,7 +341,7 @@
                     <label class="quiz__label">
                       <input type="radio" value="okta" name="type" class="quiz__input visually-hidden">
                       <div class="quiz__variant-inner">
-                        <img src="./img/Окта.webp" alt="Окта-бочка от 169т.р." class="quiz__variant-img">
+                        <img src="./img/Окта.png" alt="Окта-бочка от 169т.р." class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
                         Окта-бочка от 169т.р.
@@ -343,13 +352,15 @@
               </div>
 
               <div class="quiz__question-block">
-                <div class="quiz__num-block">
-                  Вопрос
-                  <span class="quiz__num">2</span>
+                <div class="quiz__first">
+                  <div class="quiz__num-block">
+                    Вопрос
+                    <span class="quiz__num">2</span>
+                  </div>
+                  <h3 class="quiz__question">
+                    Площадка под баню
+                  </h3>
                 </div>
-                <h3 class="quiz__question">
-                  Площадка под баню
-                </h3>
                 <ul class="quiz__variants">
                   <li class="quiz__variant">
                     <label class="quiz__label">
@@ -389,20 +400,23 @@
               </div>
 
               <div class="quiz__question-block">
-                <div class="quiz__num-block">
-                  Вопрос
-                  <span class="quiz__num">3</span>
+                <div class="quiz__first">
+                  <div class="quiz__num-block">
+                    Вопрос
+                    <span class="quiz__num">3</span>
+                  </div>
+                  <h3 class="quiz__question">
+                    Возможность установки
+                    <div class="quiz__question-info"></div>
+                    <span class="info">
+                      <div class="info__body">
+                        Сборка на участке осуществляется в том случае если баню в собранном виде установить невозможно,
+                        например это задний двор
+                        или проходят коммуникации.
+                      </div>
+                    </span>
+                  </h3>
                 </div>
-                <h3 class="quiz__question">
-                  Возможность установки
-                  <span class="info">
-                    <div class="info__body">
-                      Сборка на участке осуществляется в том случае если баню в собранном виде установить невозможно,
-                      например это задний двор
-                      или проходят коммуникации.
-                    </div>
-                  </span>
-                </h3>
                 <ul class="quiz__variants">
                   <li class="quiz__variant">
                     <label class="quiz__label">
@@ -430,14 +444,16 @@
               </div>
 
               <div class="quiz__question-block">
-                <div class="quiz__num-block">
-                  Вопрос
-                  <span class="quiz__num">4</span>
+                <div class="quiz__first">
+                  <div class="quiz__num-block">
+                    Вопрос
+                    <span class="quiz__num">4</span>
+                  </div>
+                  <h3 class="quiz__question">
+                    Регион доставки
+                  </h3>
                 </div>
-                <h3 class="quiz__question">
-                  Регион доставки
-                </h3>
-                <ul class="quiz__variants">
+                <ul class="quiz__variants quiz__variants_text">
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="krasnodar" name="region" class="quiz__input visually-hidden">
@@ -482,14 +498,16 @@
               </div>
 
               <div class="quiz__question-block">
-                <div class="quiz__num-block">
-                  Вопрос
-                  <span class="quiz__num">5</span>
+                <div class="quiz__first">
+                  <div class="quiz__num-block">
+                    Вопрос
+                    <span class="quiz__num">5</span>
+                  </div>
+                  <h3 class="quiz__question">
+                    Когда планируете приобретать баню
+                  </h3>
                 </div>
-                <h3 class="quiz__question">
-                  Когда планируете приобретать баню
-                </h3>
-                <ul class="quiz__variants">
+                <ul class="quiz__variants quiz__variants_text">
                   <li class="quiz__variant">
                     <label class="quiz__label">
                       <input type="radio" value="now" name="when" class="quiz__input visually-hidden">
@@ -542,19 +560,21 @@
               </div>
 
               <div class="quiz__question-block">
-                <div class="quiz__num-block">
-                  Вопрос
-                  <span class="quiz__num">6</span>
+                <div class="quiz__first">
+                  <div class="quiz__num-block">
+                    Вопрос
+                    <span class="quiz__num">6</span>
+                  </div>
+                  <h3 class="quiz__question">
+                    Выберите подарок
+                  </h3>
                 </div>
-                <h3 class="quiz__question">
-                  Выберите подарок
-                </h3>
                 <ul class="quiz__variants">
                   <li class="quiz__variant quiz__variant_gift">
                     <label class="quiz__label">
                       <input type="radio" value="yes" name="gift" class="quiz__input visually-hidden">
                       <div class="quiz__variant-inner">
-                        <img src="./img/Подарок.webp" alt="2 садовых шезлонга стоимостью 14.000 руб"
+                        <img src="./img/Подарок.png" alt="2 садовых шезлонга стоимостью 14.000 руб"
                           class="quiz__variant-img">
                       </div>
                       <div class="quiz__variant-desc">
@@ -566,18 +586,21 @@
                 </ul>
               </div>
 
-              <div class="quiz__question-block">
-                <div class="quiz__finish">Расчет пройден</div>
+              <div class="quiz__question-block quiz__question-block_finish">
+                <div class="quiz__finish">Расчет пройден!</div>
                 <h3 class="quiz__question quiz__question_finish">
                   Куда Вам удобнее получить расчет?
                 </h3>
                 <div class="quiz__mini-text">
-                  Введите Ваш телефон и получите стоимость в течение 30 минут на:
+                  Введите Ваш телефон и получите стоимость в течение
+                  <strong>30 минут</strong>
+                  на:
                 </div>
                 <ul class="quiz__result-list">
                   <li class="quiz__result-item">
                     <label>
-                      <input type="radio" name="mess" value="" class="quiz__result-mess visually-hidden">
+                      <input type="radio" name="mess" checked value="whatsapp"
+                        class="quiz__result-mess visually-hidden">
                       <div class="quiz__result-inner quiz__result-inner_icon">
                         <div class="quiz__result-icon-block">
                           <svg class="quiz__result-icon quiz__result-icon_whatsapp" width="26px" height="26px">
@@ -592,7 +615,7 @@
                   </li>
                   <li class="quiz__result-item">
                     <label>
-                      <input type="radio" name="mess" value="" class="quiz__result-mess visually-hidden">
+                      <input type="radio" name="mess" value="viber" class="quiz__result-mess visually-hidden">
                       <div class="quiz__result-inner quiz__result-inner_icon">
                         <div class="quiz__result-icon-block">
                           <svg class="quiz__result-icon quiz__result-icon_viber" width="26px" height="26px">
@@ -607,7 +630,7 @@
                   </li>
                   <li class="quiz__result-item">
                     <label>
-                      <input type="radio" name="mess" value="" class="quiz__result-mess visually-hidden">
+                      <input type="radio" name="mess" value="telegram" class="quiz__result-mess visually-hidden">
                       <div class="quiz__result-inner quiz__result-inner_icon">
                         <div class="quiz__result-icon-block">
                           <svg class="quiz__result-icon quiz__result-icon_telegram" width="33px" height="33px">
@@ -622,10 +645,10 @@
                   </li>
                   <li class="quiz__result-item">
                     <label>
-                      <input type="radio" name="mess" value="" class="quiz__result-mess visually-hidden">
+                      <input type="radio" name="mess" value="email" class="quiz__result-mess visually-hidden">
                       <div class="quiz__result-inner quiz__result-inner_icon">
                         <div class="quiz__result-icon-block">
-                          <svg class="quiz__result-icon quiz__result-icon_email" width="25px" height="25px">
+                          <svg class="quiz__result-icon quiz__result-icon_email" width="33px" height="33px">
                             <use xlink:href="./img/sprite-svg/sprite.svg#icon-email"></use>
                           </svg>
                         </div>
@@ -637,23 +660,24 @@
                   </li>
                 </ul>
                 <div class="quiz__result-inputs">
-                  <div class="quiz__result-input-block quiz__result-input-block_mail visually-hidden">
-                    <input type="text" class="quiz__result-input quiz__result-input_mail" name="email">
+                  <div class="quiz__result-input-block quiz__result-input-block_mail">
+                    <input type="text" class="input quiz__result-input quiz__result-input_mail" name="email"
+                      placeholder="Ваш e-mail">
                   </div>
-                  <div class="quiz__result-input-block">
-                    <input type="text" class="quiz__result-input" name="phone">
-                    <div class="quiz__result-icon-block">
-                      <svg class="quiz__result-icon quiz__result-icon_phone" width="20px" height="20px">
+                  <div class="quiz__result-input-block input-block-icon">
+                    <div class="input-block__icon-block">
+                      <svg class="input-block__icon quiz__result-icon_phone" width="20px" height="20px">
                         <use xlink:href="./img/sprite-svg/sprite.svg#icon-phone"></use>
                       </svg>
                     </div>
+                    <input type="text" class="input quiz__result-input" name="phone" placeholder="*Ваш телефон">
                   </div>
                 </div>
               </div>
               <!-- Конец вопросов -->
               <div class="quiz__button-block">
                 <button class="quiz__prev">Назад</button>
-                <button class="quiz__next">Следующий вопрос</button>
+                <button class="quiz__next btn">Следующий вопрос</button>
               </div>
 
             </main>
@@ -673,8 +697,7 @@
             <div class="advantages__posttitle">
               Наша баня-бочка – это полностью мобильное строение, изготовленное по финской технологии из отборной еловой
               или
-              кедровой древесины, обработанной специальным защитным составом, защищающим баню от грибка, плесени и
-              насекомых.
+              кедровой древесины.
             </div>
           </div>
         </div>
@@ -684,7 +707,7 @@
               <img src="./img/4.png" alt="Наша баня-бочка" class="advantages__img">
               <ul class="advantages__mega-list">
                 <li class="advantages__mega-item">
-                  <div class="advantages__mega-icon">
+                  <div class="advantages__mega-icon advantages__mega-icon_fund">
                     +
                   </div>
                   <div class="advantages__mega-desc">
@@ -693,7 +716,7 @@
                   </div>
                 </li>
                 <li class="advantages__mega-item">
-                  <div class="advantages__mega-icon">
+                  <div class="advantages__mega-icon advantages__mega-icon_izg">
                     +
                   </div>
                   <div class="advantages__mega-desc">
@@ -703,7 +726,7 @@
                   </div>
                 </li>
                 <li class="advantages__mega-item">
-                  <div class="advantages__mega-icon">
+                  <div class="advantages__mega-icon advantages__mega-icon_effect">
                     +
                   </div>
                   <div class="advantages__mega-desc">
@@ -712,7 +735,7 @@
                   </div>
                 </li>
                 <li class="advantages__mega-item">
-                  <div class="advantages__mega-icon">
+                  <div class="advantages__mega-icon advantages__mega-icon_gib">
                     +
                   </div>
                   <div class="advantages__mega-desc">
@@ -720,7 +743,7 @@
                   </div>
                 </li>
                 <li class="advantages__mega-item">
-                  <div class="advantages__mega-icon">
+                  <div class="advantages__mega-icon advantages__mega-icon_any">
                     +
                   </div>
                   <div class="advantages__mega-desc">

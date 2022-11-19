@@ -2,10 +2,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 
   & .socials__title {
+    position: relative;
     font-size: 0.8rem;
+    font-weight: 300;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      right: -18px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #25D366;
+      opacity: 0;
+      animation: flip 1.5s infinite linear;
+    }
+
+    @keyframes flip {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
   }
 }
 
