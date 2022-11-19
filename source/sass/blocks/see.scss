@@ -1,0 +1,34 @@
+.see {
+  padding-top: 150px;
+  background-image: linear-gradient(180deg, rgba(#f5fafb, 1) 0%, rgba(#fff, 0.5) 10%, rgba(#fff, 1) 100%);
+}
+
+.see__title {
+  margin-bottom: 20px;
+}
+
+.see__subtitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.see__subsubtitle {
+  text-align: center;
+  font-size: 16px;
+}
+
+.contact__subaddress {
+  margin-top: 20px;
+}
+
+.contact {
+  position: relative;
+}
+
+.contact__form {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}

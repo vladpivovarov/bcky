@@ -111,7 +111,7 @@
   opacity: 1;
   border-radius: 50%;
   box-shadow: 0 0 0 rgba($green, 0.4);
-  animation: pulse 2s infinite;
+  animation: pulse 1.5s infinite;
 }
 
 @keyframes pulse {
@@ -119,7 +119,7 @@
     box-shadow: 0 0 0 0 rgba($green, 0.9);
   }
   70% {
-      box-shadow: 0 0 0 35px rgba($green, 0);
+      box-shadow: 0 0 0 50px rgba($green, 0);
   }
   100% {
       box-shadow: 0 0 0 0 rgba($green, 0);

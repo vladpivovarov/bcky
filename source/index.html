@@ -643,27 +643,8 @@
                       </div>
                     </label>
                   </li>
-                  <li class="quiz__result-item">
-                    <label>
-                      <input type="radio" name="mess" value="email" class="quiz__result-mess visually-hidden">
-                      <div class="quiz__result-inner quiz__result-inner_icon">
-                        <div class="quiz__result-icon-block">
-                          <svg class="quiz__result-icon quiz__result-icon_email" width="33px" height="33px">
-                            <use xlink:href="./img/sprite-svg/sprite.svg#icon-email"></use>
-                          </svg>
-                        </div>
-                        <div class="quiz__result-desc">
-                          На почту
-                        </div>
-                      </div>
-                    </label>
-                  </li>
                 </ul>
                 <div class="quiz__result-inputs">
-                  <div class="quiz__result-input-block quiz__result-input-block_mail">
-                    <input type="text" class="input quiz__result-input quiz__result-input_mail" name="email"
-                      placeholder="Ваш e-mail">
-                  </div>
                   <div class="quiz__result-input-block input-block-icon">
                     <div class="input-block__icon-block">
                       <svg class="input-block__icon quiz__result-icon_phone" width="20px" height="20px">
@@ -671,6 +652,10 @@
                       </svg>
                     </div>
                     <input type="text" class="input quiz__result-input" name="phone" placeholder="*Ваш телефон">
+                    <div class="personal">
+                      Нажимая на кнопку "Получить расчет" Вы соглашаетесь с
+                      <a href="">условиями обработки персональных данных</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -809,76 +794,91 @@
       <section class="price">
         <div class="container price__container">
           <h2 class="title price__title">
-            <span class="title__important">Скачайте актуальный прайс-лист</span>
+            <span class="title__important">Скачайте актуальный прайс-каталог</span>
             на все наши бани-бочки
+            <div class="price__img-pdf-block">
+              <img src="./img/pdf-2.png" alt="pdf" class="price__img-pdf">
+              <div class="price__img-pdf-text">
+                <div class="pdf-line-1">Pdf</div>
+                <div class="pdf-line-2">2.5 мб</div>
+              </div>
+            </div>
           </h2>
           <form action="" class="price__form">
             <h3 class="price__form-title">
               Куда прислать прайс?
             </h3>
-            <ul class="price__list">
-              <li class="price__item">
-                <label class="price__wrap">
-                  <input type="radio" class="price__input visually-hidden" name="social" value="whatsapp">
-                  <div class="price__icon-block">
-                    <svg class="price__icon" width="30px" height="30px">
-                      <use xlink:href="./img/sprite-svg/sprite.svg#icon-whatsapp"></use>
-                    </svg>
-                  </div>
-                  <div class="price__desc">
-                    WhatsApp
-                  </div>
-                </label>
-              </li>
-              <li class="price__item">
-                <label class="price__wrap">
-                  <input type="radio" class="price__input visually-hidden" name="social" value="telegram">
-                  <div class="price__icon-block">
-                    <svg class="price__icon" width="35px" height="35px">
-                      <use xlink:href="./img/sprite-svg/sprite.svg#icon-telegram"></use>
-                    </svg>
-                  </div>
-                  <div class="price__desc">
-                    Telegram
+            <ul class="quiz__result-list">
+              <li class="quiz__result-item">
+                <label>
+                  <input type="radio" name="mess" checked value="whatsapp" class="quiz__result-mess visually-hidden">
+                  <div class="quiz__result-inner quiz__result-inner_icon">
+                    <div class="quiz__result-icon-block">
+                      <svg class="quiz__result-icon quiz__result-icon_whatsapp" width="26px" height="26px">
+                        <use xlink:href="./img/sprite-svg/sprite.svg#icon-whatsapp"></use>
+                      </svg>
+                    </div>
+                    <div class="quiz__result-desc">
+                      WhatsApp
+                    </div>
                   </div>
                 </label>
               </li>
-              <li class="price__item">
-                <label class="price__wrap">
-                  <input type="radio" class="price__input visually-hidden" name="social" value="viber">
-                  <div class="price__icon-block">
-                    <svg class="price__icon" width="30px" height="30px">
-                      <use xlink:href="./img/sprite-svg/sprite.svg#icon-viber"></use>
-                    </svg>
+              <li class="quiz__result-item">
+                <label>
+                  <input type="radio" name="mess" value="viber" class="quiz__result-mess visually-hidden">
+                  <div class="quiz__result-inner quiz__result-inner_icon">
+                    <div class="quiz__result-icon-block">
+                      <svg class="quiz__result-icon quiz__result-icon_viber" width="26px" height="26px">
+                        <use xlink:href="./img/sprite-svg/sprite.svg#icon-viber"></use>
+                      </svg>
+                    </div>
+                    <div class="quiz__result-desc">
+                      Viber
+                    </div>
                   </div>
-                  <div class="price__desc">
-                    Viber
+                </label>
+              </li>
+              <li class="quiz__result-item">
+                <label>
+                  <input type="radio" name="mess" value="telegram" class="quiz__result-mess visually-hidden">
+                  <div class="quiz__result-inner quiz__result-inner_icon">
+                    <div class="quiz__result-icon-block">
+                      <svg class="quiz__result-icon quiz__result-icon_telegram" width="33px" height="33px">
+                        <use xlink:href="./img/sprite-svg/sprite.svg#icon-telegram"></use>
+                      </svg>
+                    </div>
+                    <div class="quiz__result-desc">
+                      Telegram
+                    </div>
                   </div>
                 </label>
               </li>
             </ul>
-            <div class="price__row">
-              <input type="text" class="price__input-text">
+            <div class="quiz__result-inputs">
+              <div class="quiz__result-input-block input-block-icon">
+                <div class="input-block__icon-block">
+                  <svg class="input-block__icon quiz__result-icon_phone" width="20px" height="20px">
+                    <use xlink:href="./img/sprite-svg/sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
+                <input type="text" class="input quiz__result-input" name="phone" placeholder="*Ваш телефон">
+              </div>
             </div>
-            <div class="price__row">
-              <button class="price__send">Скачать прайс-лист</button>
+            <button class="btn price__btn">Скачать прайс-каталог</button>
+            <div class="personal">
+              Нажимая на кнопку "Скачать прайс-каталог" Вы соглашаетесь с
+              <a href="">условиями обработки персональных данных</a>
             </div>
           </form>
           <div class="price__img-block">
             <img src="./img/magazine-open.png" alt="прайс-лист" class="price__img">
           </div>
-          <div class="price__img-pdf-block">
-            <img src="./img/pdf-2.png" alt="pdf" class="price__img-pdf">
-            <div class="price__img-pdf-text">
-              <div class="pdf-line-1">Pdf</div>
-              <div class="pdf-line-2">2.5 мб</div>
-            </div>
-          </div>
         </div>
       </section>
       <section class="want">
         <div class="container">
-          <h2 class="title">
+          <h2 class="title want__title">
             Расскажите чего вы хотите
             <br>
             <strong>остальное возьмем на себя</strong>
@@ -927,7 +927,7 @@
             с реальными фото
           </h2>
           <div class="portfolio__subtitle">
-            Вгляните на наши работы по г. Краснодару и Краснодарскому краю
+            Вгляните на установленные бани-бочки по г. Краснодару и Краснодарскому краю
           </div>
           <div class="slider-portfolio portfolio__slider">
             <div class="slider-portfolio__wrapper">
@@ -936,7 +936,8 @@
                 <div class="slider-portfolio__inner">
                   <div class="slider-portfolio__left">
                     <div class="slider-portfolio__img-block">
-                      <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="" class="slider-portfolio__img">
+                      <img src="./img/photos/aae7129a-ce48-494b-bb5a-77104a16a438.JPG" alt=""
+                        class="slider-portfolio__img">
                     </div>
                   </div>
                   <div class="slider-portfolio__right">
@@ -946,7 +947,7 @@
                     <div class="slider-portfolio__location">
                       <div class="slider-portfolio__location-icon-block">
                         <div class="slider-portfolio__location-icon">
-                          <svg class="slider-portfolio__location-svg" width="25px" height="25px">
+                          <svg class="slider-portfolio__location-svg" width="24px" height="30px">
                             <use xlink:href="./img/sprite-svg/sprite.svg#icon-location"></use>
                           </svg>
                         </div>
@@ -962,7 +963,7 @@
                       </li>
                       <li class="slider-portfolio__sizes-item">
                         <div class="slider-portfolio__sizes-title">Ширина</div>
-                        <div class="slider-portfolio__sizes-value">2.3 м</div>
+                        <div class="slider-portfolio__sizes-value">1.8 м</div>
                       </li>
                       <li class="slider-portfolio__sizes-item">
                         <div class="slider-portfolio__sizes-title">Высота</div>
@@ -970,38 +971,170 @@
                       </li>
                       <li class="slider-portfolio__sizes-item">
                         <div class="slider-portfolio__sizes-title">Кол-во секций</div>
-                        <div class="slider-portfolio__sizes-value">2.3 м</div>
+                        <div class="slider-portfolio__sizes-value">2</div>
                       </li>
                     </ul>
                     <div class="slider-portfolio__do-block">
-                      <h4 class="slider-portfolio__do-title">Было сделано</h4>
+                      <h4 class="slider-portfolio__do-title">Было сделано:</h4>
                       <ul class="slider-portfolio__do-list">
                         <li class="slider-portfolio__do-item">
-                          Привезли на участок
+                          - Привезли на участок
                         </li>
                         <li class="slider-portfolio__do-item">
-                          Привезли на участок
+                          - Привезли на участок
                         </li>
                         <li class="slider-portfolio__do-item">
-                          Привезли на участок
+                          - Привезли на участок
                         </li>
                         <li class="slider-portfolio__do-item">
-                          Привезли на участок
+                          - Привезли на участок
                         </li>
                       </ul>
                     </div>
                     <div class="slider-portfolio__btns-block">
-                      <button class="slider-portfolio__btn-calc btn-calc">
-                        <div class="btn-calc__img-block">
-                          <img src="./img/calc.png" class="btn-calc__img">
-                        </div>
-                        <div class="btn-calc__desc">
+                      <button class="slider-portfolio__btn-calc btn btn-img">
+                        <div class="btn-img__title">
                           Рассчитать стоимость в калькуляторе
                         </div>
                       </button>
-                      <a href="" class="slider-portfolio__btn-price">
-                        Посмотреть полный прайс
-                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="slider-portfolio__screen">
+                <div class="slider-portfolio__inner">
+                  <div class="slider-portfolio__left">
+                    <div class="slider-portfolio__img-block">
+                      <img src="./img/photos/56681ada-2a56-4e7a-be36-707e4d80d97a.JPG" alt=""
+                        class="slider-portfolio__img">
+                    </div>
+                  </div>
+                  <div class="slider-portfolio__right">
+                    <h3 class="slider-portfolio__title">
+                      Баня-бочка
+                    </h3>
+                    <div class="slider-portfolio__location">
+                      <div class="slider-portfolio__location-icon-block">
+                        <div class="slider-portfolio__location-icon">
+                          <svg class="slider-portfolio__location-svg" width="24px" height="30px">
+                            <use xlink:href="./img/sprite-svg/sprite.svg#icon-location"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="slider-portfolio__location-text">
+                        Краснодар
+                      </div>
+                    </div>
+                    <ul class="slider-portfolio__sizes-list">
+                      <li class="slider-portfolio__sizes-item">
+                        <div class="slider-portfolio__sizes-title">Длина</div>
+                        <div class="slider-portfolio__sizes-value">2.3 м</div>
+                      </li>
+                      <li class="slider-portfolio__sizes-item">
+                        <div class="slider-portfolio__sizes-title">Ширина</div>
+                        <div class="slider-portfolio__sizes-value">1.8 м</div>
+                      </li>
+                      <li class="slider-portfolio__sizes-item">
+                        <div class="slider-portfolio__sizes-title">Высота</div>
+                        <div class="slider-portfolio__sizes-value">2.3 м</div>
+                      </li>
+                      <li class="slider-portfolio__sizes-item">
+                        <div class="slider-portfolio__sizes-title">Кол-во секций</div>
+                        <div class="slider-portfolio__sizes-value">2</div>
+                      </li>
+                    </ul>
+                    <div class="slider-portfolio__do-block">
+                      <h4 class="slider-portfolio__do-title">Было сделано:</h4>
+                      <ul class="slider-portfolio__do-list">
+                        <li class="slider-portfolio__do-item">
+                          - Привезли на участок
+                        </li>
+                        <li class="slider-portfolio__do-item">
+                          - Привезли на участок
+                        </li>
+                        <li class="slider-portfolio__do-item">
+                          - Привезли на участок
+                        </li>
+                        <li class="slider-portfolio__do-item">
+                          - Привезли на участок
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="slider-portfolio__btns-block">
+                      <button class="slider-portfolio__btn-calc btn btn-img">
+                        <div class="btn-img__title">
+                          Рассчитать стоимость в калькуляторе
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="slider-portfolio__screen">
+                <div class="slider-portfolio__inner">
+                  <div class="slider-portfolio__left">
+                    <div class="slider-portfolio__img-block">
+                      <img src="./img/photos/21c59d06-02b4-44d0-9531-9dde6c2f57df.webp" alt=""
+                        class="slider-portfolio__img">
+                    </div>
+                  </div>
+                  <div class="slider-portfolio__right">
+                    <h3 class="slider-portfolio__title">
+                      Баня-бочка
+                    </h3>
+                    <div class="slider-portfolio__location">
+                      <div class="slider-portfolio__location-icon-block">
+                        <div class="slider-portfolio__location-icon">
+                          <svg class="slider-portfolio__location-svg" width="24px" height="30px">
+                            <use xlink:href="./img/sprite-svg/sprite.svg#icon-location"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="slider-portfolio__location-text">
+                        Краснодар
+                      </div>
+                    </div>
+                    <ul class="slider-portfolio__sizes-list">
+                      <li class="slider-portfolio__sizes-item">
+                        <div class="slider-portfolio__sizes-title">Длина</div>
+                        <div class="slider-portfolio__sizes-value">2.3 м</div>
+                      </li>
+                      <li class="slider-portfolio__sizes-item">
+                        <div class="slider-portfolio__sizes-title">Ширина</div>
+                        <div class="slider-portfolio__sizes-value">1.8 м</div>
+                      </li>
+                      <li class="slider-portfolio__sizes-item">
+                        <div class="slider-portfolio__sizes-title">Высота</div>
+                        <div class="slider-portfolio__sizes-value">2.3 м</div>
+                      </li>
+                      <li class="slider-portfolio__sizes-item">
+                        <div class="slider-portfolio__sizes-title">Кол-во секций</div>
+                        <div class="slider-portfolio__sizes-value">2</div>
+                      </li>
+                    </ul>
+                    <div class="slider-portfolio__do-block">
+                      <h4 class="slider-portfolio__do-title">Было сделано:</h4>
+                      <ul class="slider-portfolio__do-list">
+                        <li class="slider-portfolio__do-item">
+                          - Привезли на участок
+                        </li>
+                        <li class="slider-portfolio__do-item">
+                          - Привезли на участок
+                        </li>
+                        <li class="slider-portfolio__do-item">
+                          - Привезли на участок
+                        </li>
+                        <li class="slider-portfolio__do-item">
+                          - Привезли на участок
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="slider-portfolio__btns-block">
+                      <button class="slider-portfolio__btn-calc btn btn-img">
+                        <div class="btn-img__title">
+                          Рассчитать стоимость в калькуляторе
+                        </div>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -1032,10 +1165,79 @@
           <ul class="photos__list">
             <li class="photos__item">
               <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
-                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
-                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+                href="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.JPG">
+                <img src="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.JPG" alt="Пример проекта" class="box__img">
               </a>
             </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/21c59d06-02b4-44d0-9531-9dde6c2f57df.webp">
+                <img src="./img/photos/21c59d06-02b4-44d0-9531-9dde6c2f57df.webp" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/3b329abc-505b-4b70-9742-1aa7205eb029.webp">
+                <img src="./img/photos/3b329abc-505b-4b70-9742-1aa7205eb029.webp" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/IMG_0129.JPG">
+                <img src="./img/photos/IMG_0129.JPG" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/3A9ACA2C-280C-4D80-AB20-6C2534D19B70.JPG">
+                <img src="./img/photos/3A9ACA2C-280C-4D80-AB20-6C2534D19B70.JPG" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/IMG_0564.JPG">
+                <img src="./img/photos/IMG_0564.JPG" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/10e3a54d-6e5e-47d3-8e27-0a47976b494b.JPG">
+                <img src="./img/photos/10e3a54d-6e5e-47d3-8e27-0a47976b494b.JPG" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/73f7e66a-4448-4bcd-b2f1-fc955ba6d341.JPG">
+                <img src="./img/photos/73f7e66a-4448-4bcd-b2f1-fc955ba6d341.JPG" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/IMG_1618.JPG">
+                <img src="./img/photos/IMG_1618.JPG" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/IMG_9629.JPG">
+                <img src="./img/photos/IMG_9629.JPG" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/51d52bfc-3cf5-415d-8f0b-a4a477c1a45e.JPG">
+                <img src="./img/photos/51d52bfc-3cf5-415d-8f0b-a4a477c1a45e.JPG" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.JPG">
+                <img src="./img/photos/3d0c1ad4-e248-421e-b407-f13e082c8f84.JPG" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+          </ul>
+          <div class="photos__btn photos__btn1">Больше фото</div>
+          <ul class="photos__list photos__list_2">
             <li class="photos__item">
               <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
                 href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
@@ -1078,6 +1280,37 @@
                 <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
               </a>
             </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
+                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
+                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
+                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
+                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
+                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
+                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <div class="photos__btn photos__btn2">Скрыть фото</div>
           </ul>
         </div>
       </section>
@@ -1200,7 +1433,7 @@
           </h3>
           <ul class="reviews__list">
             <li class="reviews__item">
-              <img class="reviews__img" src="//img.youtube.com/vi/k3p3W3u1rT8/maxresdefault.jpg">
+              <img class="reviews__img" src="//img.youtube.com/vi/I-buzOZkIjs/maxresdefault.jpg">
               <a href="" class="reviews__link">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
@@ -1208,7 +1441,7 @@
               </a>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" src="//img.youtube.com/vi/k3p3W3u1rT8/maxresdefault.jpg">
+              <img class="reviews__img" src="//img.youtube.com/vi/EfdhVxynrBg/maxresdefault.jpg">
               <a href="" class="reviews__link">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
@@ -1216,7 +1449,7 @@
               </a>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" src="//img.youtube.com/vi/odue0mvp4fM/maxresdefault.jpg">
+              <img class="reviews__img" src="//img.youtube.com/vi/Tv3L2Js7CAk/maxresdefault.jpg">
               <a href="" class="reviews__link">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
@@ -1224,7 +1457,7 @@
               </a>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" src="//img.youtube.com/vi/odue0mvp4fM/maxresdefault.jpg">
+              <img class="reviews__img" src="//img.youtube.com/vi/psIROMC6zO4/maxresdefault.jpg">
               <a href="" class="reviews__link">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
@@ -1232,7 +1465,7 @@
               </a>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" src="//img.youtube.com/vi/odue0mvp4fM/maxresdefault.jpg">
+              <img class="reviews__img" src="//img.youtube.com/vi/bMT2QntkXVY/1.jpg">
               <a href="" class="reviews__link">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
@@ -1240,7 +1473,7 @@
               </a>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" src="//img.youtube.com/vi/odue0mvp4fM/maxresdefault.jpg">
+              <img class="reviews__img" src="//img.youtube.com/vi/Ei16EPK-lR0/maxresdefault.jpg">
               <a href="" class="reviews__link">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
@@ -1267,28 +1500,30 @@
                 Звоните
               </div>
               <div class="ready__time">
-                Вт-Сб с 10:00 до 18:00
+                Пн-Вс с 10:00 до 18:00
               </div>
               <div class="ready__links">
                 <a href="tel:89104264159" class="ready__link">+7 (910) 426-41-59</a>
               </div>
             </div>
-            <div class="ready__callme">
-              <div class="ready__callme-subtitle">
-                Или заполните форму для обратного звонка
+            <div class="ready__form-block">
+              <div class="ready__callme">
+                <div class="ready__callme-subtitle">
+                  Или заполните форму для обратного звонка
+                </div>
+                <div class="ready__callme-desc">
+                  Мы перезвоним и ответим на все Ваши вопросы
+                </div>
               </div>
-              <div class="ready__callme-desc">
-                Мы перезвоним и ответим на все Ваши вопросы
-              </div>
+              <form class="ready__form">
+                <input type="text" class="ready__input input" name="tel" placeholder="+7 (910) ___ __ __">
+                <button class="btn ready__btn" type="submit">Перезвоните мне</button>
+                <div class="personal">
+                  Нажимая на кнопку "Перезвоните мне" Вы соглашаетесь с
+                  <a href="">условиями обработки персональных данных</a>
+                </div>
+              </form>
             </div>
-            <form class="ready__form">
-              <input type="text" class="ready__input" name="tel" placeholder="+7 (910) ___ __ __">
-              <button type="submit">Перезвоните мне</button>
-              <div class="personal">
-                Нажимая на кнопку "Перезвоните мне" Вы соглашаетесь с
-                <a href="">условиями обработки персональных данных</a>
-              </div>
-            </form>
           </div>
         </div>
       </section>
@@ -1334,11 +1569,11 @@
       </section>
       <section class="questions">
         <div class="container">
-          <h2 class="title">Вопросы и
+          <h2 class="title questions__title">Вопросы и
             <span class="title__important">ответы</span>
           </h2>
           <ul class="questions__list">
-            <li class="questions__item">
+            <li class="questions__item questions__item_open">
               <h4 class="questions__subtitle">
                 Как устанавливается баня бочка?
                 <svg class="questions__icon" width="20px" height="18px">

@@ -1,6 +1,20 @@
+.want {
+  padding-top: 200px;
+}
+
+.want__title {
+  margin-bottom: 70px;
+  line-height: 1.1;
+
+  & strong {
+    font-weight: 500;
+  }
+}
+
 .want__list {
   display: flex;
-  gap: 50px;
+  gap: 30px;
+  justify-content: space-around;
 }
 
 .want__item {
@@ -9,6 +23,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  gap: 20px;
 }
 
 .want__img {

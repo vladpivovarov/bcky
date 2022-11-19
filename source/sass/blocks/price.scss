@@ -1,11 +1,55 @@
+.price {
+  position: relative;
+  padding-top: 150px;
+
+  background-image:  linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(#f5fafb, 0.5) 20%, rgba(#f5fafb, 1) 100%);
+}
+
 .price__title {
+  position: relative;
+  z-index: 2;
   max-width: 600px;
   text-align: left;
   line-height: 1.1;
 }
 
-.price__img-pdf-block {
+.price__form {
   position: relative;
+  z-index: 1;
+  max-width: 550px;
+  margin-top: 40px;
+  padding: 60px;
+  background-color: #fff;
+  box-shadow: 0 0 50px rgba(#272727, .3);
+  border-radius: 30px;
+}
+
+.price__form-title {
+  font-size: 32px;
+  margin: 0;
+}
+
+.price__btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 40px 60px 36px 60px;
+  font-size: 17px;
+}
+
+
+
+.price__img-block {
+  position: absolute;
+  width: 105vw;
+  top: 80px;
+  right: -30vw;
+}
+
+.price__img-pdf-block {
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  transform: translate(50%, 0);
   width: 200px;
   height: 200px;
   background-color: #fff;
@@ -21,6 +65,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
   font-weight: 600;
+  font-size: 22px;
 }
 
 .price__img-pdf {

@@ -1,4 +1,6 @@
 .photos {
+  padding-bottom: 30px;
+  background-color: #fff;
   background-image: url("../img/bochka-right.png");
   background-position: top right -270px;
   background-size: 700px auto;
@@ -30,6 +32,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
+  margin-bottom: 80px;
 }
 
 .photos__item {
@@ -46,4 +49,50 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.photos__btn {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  padding: 25px 40px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: $green;
+  border: 3px solid $green;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: #fff;
+  transition: all .3s;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    background-color: $green;
+  }
+}
+
+.photos__list_2 {
+  margin-top: 0px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: opacity 0.3s, margin 0.3s;
+}
+
+.photos__list_open {
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 200px;
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+
+.photos__btn2 {
+  position: absolute;
+  top: calc(100% + 50px);
+  left: 50%;
+  transform: translateX(-50%);
 }
