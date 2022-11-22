@@ -1,4 +1,5 @@
 .dreams {
+  position: relative;
   margin-top: -3px;
   padding-top: 100px;
   min-height: 800px;
@@ -9,6 +10,19 @@
   background-position: right 90px, bottom -2px center;
   background-repeat: no-repeat, no-repeat;
   padding-bottom: 200px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-40%);
+    width: 400px;
+    height: 700px;
+    background-image: url("../img/test-green2.png");
+    background-repeat: no-repeat;
+    background-size: contain
+  }
 }
 
 .dreams__title {

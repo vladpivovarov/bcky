@@ -1,10 +1,24 @@
 .hero {
+  position: relative;
   background: url("../img/bg.png") #fff no-repeat;
   background-size: auto 100%;
   background-position: top right -100px;
   background-repeat: no-repeat;
-}
 
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 100px;
+    width: 300px;
+    height: 600px;
+    background-image: url("../img/tr-1.png");
+    background-repeat: no-repeat;
+    background-size: contain
+  }
+}
 
 .hero__title {
   font-size: 70px;
@@ -23,7 +37,7 @@
 }
 
 .hero__desc {
-  margin-top: -10px;
+  margin-top: 50px;
   font-size: 22px;
   font-weight: 300;
 }

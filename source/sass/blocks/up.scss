@@ -1,0 +1,25 @@
+.up {
+  position: fixed;
+  z-index: 1;
+  bottom: 80px;
+  right: 20px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: url("../img/up.png") center/70px no-repeat;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @media (max-width: 1600px) {
+    width: 80px;
+    height: 80px;
+    bottom: 70px;
+    right: 10px;
+    background: url("../img/up.png") center/50px no-repeat;
+  }
+}

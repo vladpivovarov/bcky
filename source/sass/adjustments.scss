@@ -18,6 +18,7 @@
 
 html {
   height: 100%;
+  width: 100%;
   font-family: $fontTT;
   font-size: 18px;
   line-height: 1.4;
@@ -26,8 +27,13 @@ html {
 }
 
 body {
+  position: relative;
   height: 100%;
   background-color: #f5fafb;
+}
+
+.-weekend- {
+  color: #e3e3e3;
 }
 
 button,
@@ -92,12 +98,11 @@ img {
 }
 
 .wrapper {
-  position: relative;
   min-height: 100%;
   min-width: 320px;
-  overflow: hidden;
   display: grid;
   grid-template-rows: 1fr min-content;
+  overflow: hidden;
 }
 
 .container {
@@ -155,3 +160,28 @@ img {
     top: -300px;
   }
 };
+
+#inputResult {
+  font-size: 1rem;
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  .ul,
+  .ol {
+    margin: 20px;
+  }
+
+  dd {
+    margin: initial;
+  }
+
+  mark, .mark {
+    color: $green;
+    background-color: yellow;
+  }
+}

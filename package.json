@@ -51,5 +51,8 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/sass/**/*.scss"
-  ]
+  ],
+  "dependencies": {
+    "air-datepicker": "^3.3.1"
+  }
 }

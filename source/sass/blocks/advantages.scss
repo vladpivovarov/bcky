@@ -1,6 +1,21 @@
 .advantages {
+  position: relative;
   padding-top: 220px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 15%, rgb(255, 255, 255) 100%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 40%;
+    transform: translateY(-50%);
+    margin-top: 100px;
+    width: 200px;
+    height: 400px;
+    background-image: url("../img/green.png");
+    background-repeat: no-repeat;
+    background-size: contain
+  }
 }
 
 .advantages__container {

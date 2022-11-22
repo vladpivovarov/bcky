@@ -1,10 +1,12 @@
 const date = () => {
 
-  const dataElem = document.querySelector(".year");
+  const dataElems = document.querySelectorAll(".year");
   const time = new Date();
   const year = time.getFullYear();
 
-  dataElem.textContent = year;
+  dataElems.forEach((elem) => {
+    elem.textContent = year;
+  });
 }
 
 export default date;

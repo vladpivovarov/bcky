@@ -11,15 +11,20 @@
   <link rel="apple-touch-icon" sizes="76x76" href="./img/android-chrome-192x1.png">
   <link rel="apple-touch-icon" sizes="152x152" href="./img/android-chrome-192x1.png">
   <link rel="apple-touch-startup-image" href="./img/android-chrome-192x1.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.12.0/video-js.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="./js/additionally/modernizr-custom.js" async></script>
+  <script src="./js/additionally/scroll.min.js" defer></script>
   <script src="./js/additionally/swiper-bundle.min.js" defer></script>
   <script src="./js/additionally/jquery.min.js" defer></script>
   <script src="./js/additionally/jquery-ui.min.js" defer></script>
   <script src="./js/additionally/jquery.colorbox-min.js" defer></script>
+  <script src="./js/additionally/air-datepicker.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.12.0/video.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.min.js" defer></script>
   <script src="./js/main.js" defer></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=60f13f6a-8908-4537-be92-ab6945c1fb02&lang=ru_RU"
-    type="text/javascript"></script>
+    type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -27,7 +32,7 @@
     <div class="page">
       <section class="hero">
         <div class="hero__container container">
-          <header class="header">
+          <header class="header" id="header">
             <div class="header__top">
               <a href="./" class="logo header__logo">
                 <div class="logo__img-block">
@@ -37,72 +42,78 @@
                   Европейское качество от Bochky®
                 </div>
               </a>
-              <button class="header__btn btn btn-img">
-                <div class="btn-img__title">
-                  Скачать прайс-лист
-                </div>
-                <div class="btn-img__subtitle">
-                  + получить подарок
+              <button class="header__burger">
+                <div class="header__burger-inner">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
               </button>
-              <div class="header__socials socials">
-                <div class="socials__title">
-                  Нажмите и начните общение
-                </div>
-                <ul class="socials__list">
-                  <li class="socials__item">
-                    <a href="#" class="socials__link socials__link_vb"></a>
-                  </li>
-                  <li class="socials__item">
-                    <a href="#" class="socials__link socials__link_wt"></a>
-                  </li>
-                  <li class="socials__item">
-                    <a href="#" class="socials__link socials__link_tg"></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="header__contact contacts">
-                <div class="contacts__title">
-                  Звоните, Пн-Вc 10:00 - 18:00
-                </div>
-                <a href="tel:89104264159" class="contacts__phone">
-                  +7 (910) 426-41-59
+              <div class="header__top-wrap">
+                <a class="header__btn btn btn-img" href="#pricedownload">
+                  <div class="btn-img__title">
+                    Скачать прайс-лист
+                  </div>
+                  <div class="btn-img__subtitle">
+                    + получить подарок
+                  </div>
                 </a>
-                <a href="#" class="contacts__call">
-                  Позвоните мне
-                </a>
+                <div class="header__socials socials">
+                  <div class="socials__title">
+                    Нажмите и начните общение
+                  </div>
+                  <ul class="socials__list">
+                    <li class="socials__item">
+                      <a href="#" class="socials__link socials__link_vb"></a>
+                    </li>
+                    <li class="socials__item">
+                      <a href="#" class="socials__link socials__link_wt"></a>
+                    </li>
+                    <li class="socials__item">
+                      <a href="#" class="socials__link socials__link_tg"></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header__contact contacts">
+                  <div class="contacts__title">
+                    Звоните, Пн-Вc 10:00 - 18:00
+                  </div>
+                  <a href="tel:89104264159" class="contacts__phone">
+                    +7 (910) 426-41-59
+                  </a>
+                  <a href="#" class="contacts__call modal-open-js">
+                    Позвоните мне
+                  </a>
+                </div>
               </div>
             </div>
             <nav class="header__bottom">
               <div class="logo visually-hidden">
                 <div class="logo__img-block">
-                  <img class="logo__img" src="" alt="Bochky®">
-                </div>
-                <div class="logo__desc">
-                  Европейское качество от Bochky®
+                  <img class="logo__img" src="./img/100x100_2.1.svg" alt="Bochky®" width="50px" height="50px">
                 </div>
               </div>
               <ul class="nav">
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Стоимость</a>
+                  <a href="#price" class="nav__link">Стоимость</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Преимущества</a>
+                  <a href="#advantages" class="nav__link">Преимущества</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Выполненные проекты</a>
+                  <a href="#portfolio" class="nav__link">Выполненные проекты</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">О компании</a>
+                  <a href="#about" class="nav__link">О компании</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Отзывы</a>
+                  <a href="#reviews" class="nav__link">Отзывы</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Выставка</a>
+                  <a href="#exhibition" class="nav__link">Выставка</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">Контакты</a>
+                  <a href="#exhibition" class="nav__link">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -151,15 +162,15 @@
               </li>
             </ul>
             <div class="hero__btn-wrap">
-              <button class="btn hero__btn">
+              <a class="btn hero__btn" href="#price">
                 Калькулятор стоимости бани-бочки
-              </button>
+              </a>
               <div class="hero__time">
                 Займет не больше 1 минуты
               </div>
             </div>
             <div class="hero__play">
-              <button class="hero__play-link">
+              <button class="hero__play-link video-link">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
                 </svg>
@@ -168,7 +179,8 @@
           </div>
         </div>
       </section>
-      <section class="quiz-wrap">
+      <section class="quiz-wrap" id="price">
+        <div class="quiz-wrap__before"></div>
         <div class="container quiz-wrap__container">
           <h2 class="title quiz-wrap__title">
             <span class="title__important">Подберите проект бани</span> +
@@ -242,7 +254,7 @@
                   </div>
                   <div class="quiz__gift-desc">
                     <strong>Цена</strong>
-                    не известна
+                    <span class="quiz__gift-status_1"> не известна</span>
                   </div>
                   <div class="quiz__gift-icon quiz__gift-icon_price"></div>
                 </li>
@@ -252,7 +264,7 @@
                   </div>
                   <div class="quiz__gift-desc">
                     <strong>PDF</strong>
-                    закрыт
+                    <span class="quiz__gift-status_2">закрыт</span>
                   </div>
                   <div class="quiz__gift-icon quiz__gift-icon_pdf"></div>
                 </li>
@@ -262,7 +274,7 @@
                   </div>
                   <div class="quiz__gift-desc">
                     <strong>Подарок </strong>
-                    не выбран
+                    <span class="quiz__gift-status_3">не выбран</span>
                   </div>
                   <div class="quiz__gift-icon quiz__gift-icon_gift"></div>
                 </li>
@@ -282,7 +294,7 @@
               </div>
 
               <!-- Начало вопросов -->
-              <div class="quiz__question-block quiz__question-block_open">
+              <div class="quiz__question-block">
                 <div class="quiz__first">
                   <div class="quiz__num-block">
                     Вопрос
@@ -651,11 +663,8 @@
                         <use xlink:href="./img/sprite-svg/sprite.svg#icon-phone"></use>
                       </svg>
                     </div>
-                    <input type="text" class="input quiz__result-input" name="phone" placeholder="*Ваш телефон">
-                    <div class="personal">
-                      Нажимая на кнопку "Получить расчет" Вы соглашаетесь с
-                      <a href="">условиями обработки персональных данных</a>
-                    </div>
+                    <input type="text" class="input quiz__result-input mask-phone-js" name="phone"
+                      placeholder="*Ваш телефон">
                   </div>
                 </div>
               </div>
@@ -664,12 +673,15 @@
                 <button class="quiz__prev">Назад</button>
                 <button class="quiz__next btn">Следующий вопрос</button>
               </div>
-
+              <div class="personal quiz__personal visually-hidden">
+                Нажимая на кнопку "Получить расчет" Вы соглашаетесь с
+                <a href="./privacy.html" target="_blank">условиями обработки персональных данных</a>
+              </div>
             </main>
           </form>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <div class="advantages__header">
           <div class="container">
             <div class="advantages__pretitle">
@@ -791,7 +803,7 @@
           </div>
         </div>
       </section>
-      <section class="price">
+      <section class="price" id="pricedownload">
         <div class="container price__container">
           <h2 class="title price__title">
             <span class="title__important">Скачайте актуальный прайс-каталог</span>
@@ -862,13 +874,14 @@
                     <use xlink:href="./img/sprite-svg/sprite.svg#icon-phone"></use>
                   </svg>
                 </div>
-                <input type="text" class="input quiz__result-input" name="phone" placeholder="*Ваш телефон">
+                <input type="text" class="input quiz__result-input mask-phone-js" name="phone"
+                  placeholder="*Ваш телефон">
               </div>
             </div>
             <button class="btn price__btn">Скачать прайс-каталог</button>
             <div class="personal">
               Нажимая на кнопку "Скачать прайс-каталог" Вы соглашаетесь с
-              <a href="">условиями обработки персональных данных</a>
+              <a href="./privacy.html" target="_blank">условиями обработки персональных данных</a>
             </div>
           </form>
           <div class="price__img-block">
@@ -920,7 +933,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="title portfolio__title">
             <span class="title__important">Последние наши работы</span>
@@ -1239,82 +1252,90 @@
           <div class="photos__btn photos__btn1">Больше фото</div>
           <ul class="photos__list photos__list_2">
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
-                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
-                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/1.JPG">
+                <img src="./img/photos/1.JPG" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
-                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
-                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/2.JPG">
+                <img src="./img/photos/2.JPG" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
-                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
-                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/3.JPG">
+                <img src="./img/photos/3.JPG" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
-                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
-                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/4.JPG">
+                <img src="./img/photos/4.JPG" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
-                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
-                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/5.JPG">
+                <img src="./img/photos/5.JPG" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
-                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
-                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/6.JPG">
+                <img src="./img/photos/6.JPG" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
-                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
-                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/7.JPG">
+                <img src="./img/photos/7.JPG" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
-                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
-                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/8.JPG">
+                <img src="./img/photos/8.JPG" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
-                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
-                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/9.JPG">
+                <img src="./img/photos/9.JPG" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
-                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
-                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/10.JPG">
+                <img src="./img/photos/10.JPG" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
-                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
-                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/11.JPG">
+                <img src="./img/photos/11.JPG" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <li class="photos__item">
-              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1"
-                href="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg">
-                <img src="./img/ov-kvad1-4x4p-5-1-08-transformed.jpeg" alt="Пример проекта" class="box__img">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/12.JPG">
+                <img src="./img/photos/12.JPG" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/13.JPG">
+                <img src="./img/photos/13.JPG" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/14.JPG">
+                <img src="./img/photos/14.JPG" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/15.JPG">
+                <img src="./img/photos/15.JPG" alt="Пример проекта" class="box__img">
+              </a>
+            </li>
+            <li class="photos__item">
+              <a class="colorbox photos__link-img" rel="colorbox" data-fancybox="group-1" href="./img/photos/16.JPG">
+                <img src="./img/photos/16.JPG" alt="Пример проекта" class="box__img">
               </a>
             </li>
             <div class="photos__btn photos__btn2">Скрыть фото</div>
           </ul>
         </div>
       </section>
-      <section class="dreams">
+      <section class="dreams" id="about">
         <div class="container dreams__container">
           <div class="dreams__content">
             <h2 class="dreams__title title">
@@ -1422,7 +1443,7 @@
           </ul>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
           <h2 class="title reviews__title">
             И это все —
@@ -1433,52 +1454,52 @@
           </h3>
           <ul class="reviews__list">
             <li class="reviews__item">
-              <img class="reviews__img" src="//img.youtube.com/vi/I-buzOZkIjs/maxresdefault.jpg">
-              <a href="" class="reviews__link">
+              <img class="reviews__img" src="./img/reviews.jpg">
+              <button class="reviews__link reviews__link_1">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
                 </svg>
-              </a>
+              </button>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" src="//img.youtube.com/vi/EfdhVxynrBg/maxresdefault.jpg">
-              <a href="" class="reviews__link">
+              <img class="reviews__img" src="./img/reviews2.jpg">
+              <button class="reviews__link reviews__link_2">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
                 </svg>
-              </a>
+              </button>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" src="//img.youtube.com/vi/Tv3L2Js7CAk/maxresdefault.jpg">
-              <a href="" class="reviews__link">
+              <img class="reviews__img" src="./img/reviews3.jpg">
+              <button class="reviews__link reviews__link_3">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
                 </svg>
-              </a>
+              </button>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" src="//img.youtube.com/vi/psIROMC6zO4/maxresdefault.jpg">
-              <a href="" class="reviews__link">
+              <img class="reviews__img" src="./img/reviews4.jpg">
+              <button class="reviews__link reviews__link_4">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
                 </svg>
-              </a>
+              </button>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" src="//img.youtube.com/vi/bMT2QntkXVY/1.jpg">
-              <a href="" class="reviews__link">
+              <img class="reviews__img" src="./img/reviews5.jpg">
+              <button class="reviews__link reviews__link_5">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
                 </svg>
-              </a>
+              </button>
             </li>
             <li class="reviews__item">
-              <img class="reviews__img" src="//img.youtube.com/vi/Ei16EPK-lR0/maxresdefault.jpg">
-              <a href="" class="reviews__link">
+              <img class="reviews__img" src="./img/reviews6.jpg">
+              <button class="reviews__link  reviews__link_6">
                 <svg class="reviews__icon" width="18px" height="18px">
                   <use xlink:href="./img/sprite-svg/sprite.svg#icon-play"></use>
                 </svg>
-              </a>
+              </button>
             </li>
           </ul>
           <div class="reviews__circle">
@@ -1516,18 +1537,19 @@
                 </div>
               </div>
               <form class="ready__form">
-                <input type="text" class="ready__input input" name="tel" placeholder="+7 (910) ___ __ __">
+                <input type="text" class="ready__input input mask-phone-js" name="phone"
+                  placeholder="+7 (910) ___ __ __">
                 <button class="btn ready__btn" type="submit">Перезвоните мне</button>
                 <div class="personal">
                   Нажимая на кнопку "Перезвоните мне" Вы соглашаетесь с
-                  <a href="">условиями обработки персональных данных</a>
+                  <a href="./privacy.html" target="_blank">условиями обработки персональных данных</a>
                 </div>
               </form>
             </div>
           </div>
         </div>
       </section>
-      <section class="see">
+      <section class="see" id="exhibition">
         <div class="container">
           <h2 class="title see__title">
             <span class="title__important">Увидеть вживую</span>
@@ -1544,9 +1566,13 @@
               <h3 class="contact__title">
                 Запишитесь на бесплатную экскурсию
               </h3>
-              <input type="text" id="datepicker" name="data" class="contact__data">
-              <input type="text" name="phone" class="contact__input">
-              <button type="submit">Записаться</button>
+              <input type="text" id="air" name="data" class="contact__data input" placeholder="Выберите дату">
+              <input type="text" name="phone" class="contact__input input mask-phone-js" placeholder="Ваш телефон">
+              <button type="submit" class="btn contact__btn">Записаться</button>
+              <div class="personal">
+                Нажимая на кнопку "Перезвоните мне" Вы соглашаетесь с
+                <a href="./privacy.html" target="_blank">условиями обработки персональных данных</a>
+              </div>
             </form>
             <address class="contact__address visually-hidden">
               <p class="contact__address-details">
@@ -1690,7 +1716,7 @@
           <a href="tel:89104264159" class="footer__phone">
             +7 (910) 426-41-59
           </a>
-          <button class="footer__btn">
+          <button class="footer__btn btn modal-open-js">
             Получить консультацию
           </button>
         </div>
@@ -1726,6 +1752,162 @@
         Ссылка на профиль ВК - https://t.me/webRvlad
       </div>
     </footer>
+    <a href="#header" class="up"></a>
+
+    <!-- Видео модалки -->
+    <div class="modal-video">
+      <div class="modal-video__inner">
+        <video id="my-video" class="video-js vjs-default-skin" controls width="640" height="264"
+          data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/LKnP4-pppFg"}], "youtube": { "controls": true } }'>
+        </video>
+        <div class="close"></div>
+      </div>
+    </div>
+    <div class="modal-video-mini modal-video-mini_1">
+      <div class="modal-video__inner">
+        <video id="my-video1" class="video-js vjs-default-skin" controls width="640" height="264"
+          data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=4GyKfkSReLo"}], "youtube": { "controls": true } }'>
+        </video>
+        <div class="close"></div>
+      </div>
+    </div>
+    <div class="modal-video-mini modal-video-mini_2">
+      <div class="modal-video__inner">
+        <video id="my-video2" class="video-js vjs-default-skin" controls width="640" height="264"
+          data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/EfdhVxynrBg"}], "youtube": { "controls": true } }'>
+        </video>
+        <div class="close"></div>
+      </div>
+    </div>
+    <div class="modal-video-mini modal-video-mini_3">
+      <div class="modal-video__inner">
+        <video id="my-video3" class="video-js vjs-default-skin" controls width="640" height="264"
+          data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/Tv3L2Js7CAk"}], "youtube": { "controls": true } }'>
+        </video>
+        <div class="close"></div>
+      </div>
+    </div>
+    <div class="modal-video-mini modal-video-mini_4">
+      <div class="modal-video__inner">
+        <video id="my-video4" class="video-js vjs-default-skin" controls width="640" height="264"
+          data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/Tv3L2Js7CAk"}], "youtube": { "controls": true } }'>
+        </video>
+        <div class="close"></div>
+      </div>
+    </div>
+    <div class="modal-video-mini modal-video-mini_5">
+      <div class="modal-video__inner">
+        <video id="my-video5" class="video-js vjs-default-skin" controls width="640" height="264"
+          data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/Tv3L2Js7CAk"}], "youtube": { "controls": true } }'>
+        </video>
+        <div class="close"></div>
+      </div>
+    </div>
+    <div class="modal-video-mini modal-video-mini_6">
+      <div class="modal-video__inner">
+        <video id="my-video6" class="video-js vjs-default-skin" controls width="640" height="264"
+          data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/Ei16EPK-lR0"}], "youtube": { "controls": true } }'>
+        </video>
+        <div class="close"></div>
+      </div>
+    </div>
+
+    <!-- Form модалки -->
+    <div class="modal modal__call">
+      <div class="modal__inner form-animate">
+        <button class="modal__close"></button>
+        <div class="modal__title">
+          Введите ваш номер телефона
+        </div>
+        <form class="modal__row modal__form">
+          <input type="text" name="phone" class="modal__input input mask-phone-js _req"
+            placeholder="Ваш номер телефона">
+          <button class="modal__button">
+            Перезвоните мне
+          </button>
+        </form>
+        <div class="modal__privacy">
+          Нажимая на кнопку Отправить, Вы даете свое согласие на
+          <a href="./privacy.html" target="_blank"> обработку персональных данных</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal_shit">
+      <div class="modal__inner form-animate">
+        <form class="modal__form-shit">
+          <button class="modal__close"></button>
+          <p>Подождите не уходите! У нас для вас есть подарок</p>
+          <h1 class="title">
+            <span class="color">17 советов</span>
+            по выбору бани <span class="year">1997</span>
+          </h1>
+          <p>Куда прислать?</p>
+          <ul class="quiz__result-list">
+            <li class="quiz__result-item">
+              <label>
+                <input type="radio" name="mess" checked value="whatsapp" class="quiz__result-mess visually-hidden">
+                <div class="quiz__result-inner quiz__result-inner_icon">
+                  <div class="quiz__result-icon-block">
+                    <svg class="quiz__result-icon quiz__result-icon_whatsapp" width="26px" height="26px">
+                      <use xlink:href="./img/sprite-svg/sprite.svg#icon-whatsapp"></use>
+                    </svg>
+                  </div>
+                  <div class="quiz__result-desc">
+                    WhatsApp
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li class="quiz__result-item">
+              <label>
+                <input type="radio" name="mess" value="viber" class="quiz__result-mess visually-hidden">
+                <div class="quiz__result-inner quiz__result-inner_icon">
+                  <div class="quiz__result-icon-block">
+                    <svg class="quiz__result-icon quiz__result-icon_viber" width="26px" height="26px">
+                      <use xlink:href="./img/sprite-svg/sprite.svg#icon-viber"></use>
+                    </svg>
+                  </div>
+                  <div class="quiz__result-desc">
+                    Viber
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li class="quiz__result-item">
+              <label>
+                <input type="radio" name="mess" value="telegram" class="quiz__result-mess visually-hidden">
+                <div class="quiz__result-inner quiz__result-inner_icon">
+                  <div class="quiz__result-icon-block">
+                    <svg class="quiz__result-icon quiz__result-icon_telegram" width="33px" height="33px">
+                      <use xlink:href="./img/sprite-svg/sprite.svg#icon-telegram"></use>
+                    </svg>
+                  </div>
+                  <div class="quiz__result-desc">
+                    Telegram
+                  </div>
+                </div>
+              </label>
+            </li>
+          </ul>
+          <div class="quiz__result-inputs">
+            <div class="quiz__result-input-block input-block-icon">
+              <div class="input-block__icon-block">
+                <svg class="input-block__icon quiz__result-icon_phone" width="20px" height="20px">
+                  <use xlink:href="./img/sprite-svg/sprite.svg#icon-phone"></use>
+                </svg>
+              </div>
+              <input type="text" class="input quiz__result-input mask-phone-js" name="phone" placeholder="*Ваш телефон">
+            </div>
+          </div>
+          <button class="btn price__btn">Скачать PDF-файл</button>
+          <div class="personal">
+            Нажимая на кнопку "Скачать PDF-файл" Вы соглашаетесь с
+            <a href="./privacy.html" target="_blank">условиями обработки персональных данных</a>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 </body>
 

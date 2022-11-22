@@ -6,17 +6,20 @@
   border-radius: 30px;
   background-color: #f5fafb;
   box-shadow: 0 0 10px rgba(0,0,0,0.07) inset;
+  overflow: hidden;
 }
 
 .progressbar__line {
   height: 100%;
   width: 16.66%;
+  max-width: 100%;
   background-image: url("../img/line.png");
   background-size: cover;
   background-repeat: repeat;
   border-radius: 30px;
   opacity: 0.8;
   animation: go 7s infinite linear;
+  transition: width 0.3s;
 }
 
 .progressbar__status {

@@ -1,9 +1,24 @@
 .portfolio {
+  position: relative;
   padding-top: 150px;
   background-image: url("../img/bochka-no-color.png"), linear-gradient(180deg, rgba(#f5fafb, 1) 0%, rgba(#fff, 0.5) 10%, rgba(#fff, 1) 100%);
   background-position: top 320px right -100px, center;
   background-repeat: no-repeat;
   background-size: 450px auto, cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10%;
+    transform: translateY(-50%) rotate(180deg);
+    margin-top: 100px;
+    width: 300px;
+    height: 600px;
+    background-image: url("../img/tr-14.png");
+    background-repeat: no-repeat;
+    background-size: contain
+  }
 }
 
 

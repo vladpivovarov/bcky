@@ -1,5 +1,36 @@
 .quiz-wrap {
   position: relative;
+
+  & .quiz-wrap__before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    margin-top: 100px;
+    width: 300px;
+    height: 600px;
+    background-image: url("../img/test-green2.png");
+    background-repeat: no-repeat;
+    background-size: contain
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -55px;
+    top: 30%;
+    transform: translateY(-50%);
+    margin-top: -100px;
+    width: 300px;
+    height: 600px;
+    background-image: url("../img/test-green1.png");
+    background-repeat: no-repeat;
+    background-size: contain
+  }
+}
+
+.quiz-wrap {
   padding-top: 50px;
   background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(245,250,251,1) 30%, rgba(245,250,251,1) 100%);
 
@@ -64,6 +95,8 @@
 }
 
 .quiz {
+  position: relative;
+  z-index: 1;
   display: flex;
   gap: 20px;
   padding: 0;
@@ -86,7 +119,7 @@
 
 .quiz__author-image-block {
   width: 100%;
-  height: 350px;
+  height: 330px;
 }
 
 .quiz__author-image {
@@ -140,7 +173,7 @@
 }
 
 .quiz__first {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 70px;
   display: flex;
   gap: 30px;
@@ -515,4 +548,37 @@
 
 .quiz__result-input-block_mail {
   margin-bottom: 20px;
+}
+
+.quiz_finish {
+  background-image: url("../img/Holding-Phone-Mockup.png");
+  background-repeat: no-repeat;
+  background-position: right 20px bottom -120px;
+  background-size: auto 80%;
+
+  & .quiz__gift-icon {
+    display: none;
+  }
+
+  & .quiz__gift-desc {
+    padding: 10px 20px;
+    border: 2px dashed $green;
+    color: $green;
+    border-radius: 15px;
+  }
+
+  & .quiz__author-desc {
+    padding: 15px 25px;
+    border-radius: 15px;
+    background-color: $green;
+    color: #fff;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  & .quiz__personal {
+    max-width: 400px;
+  }
 }
