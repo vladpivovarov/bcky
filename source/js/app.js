@@ -17,6 +17,7 @@ import visible from "./modules/visible";
 import modal from "./modules/modal";
 import shit from "./modules/shit";
 import stick from "./modules/stick";
+import photos from "./modules/photos";
 
 
 try {
@@ -129,6 +130,12 @@ try {
 
 try {
   stick();
+} catch (error) {
+  console.log(error);
+}
+
+try {
+  photos();
 } catch (error) {
   console.log(error);
 }

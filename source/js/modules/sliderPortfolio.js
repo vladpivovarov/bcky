@@ -14,7 +14,7 @@ const sliderPortfolio = () => {
     loop: true,
 
     autoplay: {
-      delay: 2000,
+      delay: 20000000,
       pauseOnMouseEnter: true,
       disableOnInteraction: false
     },
