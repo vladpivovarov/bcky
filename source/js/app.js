@@ -16,6 +16,7 @@ import miniVideo from "./modules/miniVideo";
 import visible from "./modules/visible";
 import modal from "./modules/modal";
 import shit from "./modules/shit";
+import stick from "./modules/stick";
 
 
 try {
@@ -122,6 +123,12 @@ try {
 
 try {
   shit();
+} catch (error) {
+  console.log(error);
+}
+
+try {
+  stick();
 } catch (error) {
   console.log(error);
 }

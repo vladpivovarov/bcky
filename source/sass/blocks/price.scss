@@ -1,8 +1,11 @@
 .price {
   position: relative;
   padding-top: 150px;
-
   background-image:  linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(#f5fafb, 0.5) 20%, rgba(#f5fafb, 1) 100%);
+
+  @media (max-width: $tablet) {
+    padding-top: 80px;
+  }
 }
 
 .price__title {
@@ -22,10 +25,15 @@
   background-color: #fff;
   box-shadow: 0 0 50px rgba(#272727, .1);
   border-radius: 30px;
+
+  @media (max-width: $tablet) {
+    padding: 30px 20px 20px;
+  }
 }
 
 .price__form-title {
-  font-size: 32px;
+  font-size: 1.76rem;
+  line-height: 1.1;
   margin: 0;
 }
 
@@ -34,15 +42,27 @@
   margin-top: 30px;
   padding: 40px 60px 36px 60px;
   font-size: 17px;
+
+  @media (max-width: 768px) {
+    padding: 1.9rem 1.3rem 1.6rem;
+    font-size: 0.7rem;
+  }
+
+  @media (max-width: $minmobile) {
+    font-size: 0.7rem;
+  }
 }
-
-
 
 .price__img-block {
   position: absolute;
   width: 105vw;
   top: 80px;
   right: -30vw;
+
+  @media (max-width: $tablet) {
+    top: 190px;
+    right: -40vw;
+  }
 }
 
 .price__img-pdf-block {

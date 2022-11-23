@@ -24,6 +24,18 @@ html {
   line-height: 1.4;
   color: #282828;
   font-weight: normal;
+
+  @media (max-width: $desktop) {
+    font-size: 16px;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 15px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -114,12 +126,12 @@ img {
     padding: 0;
   }
 
-  @media (min-width: $tablet) {
-    padding: 0 30px;
+  @media (max-width: $minmobile) {
+    padding: 0 15px;
   }
 
-  @media (min-width: $desktop) {
-    padding: 0;
+  @media (min-width: $tablet) {
+    padding: 0 30px;
   }
 }
 
@@ -161,6 +173,8 @@ img {
   }
 };
 
+
+// Стили для страницы privacy из Tilda
 #inputResult {
   font-size: 1rem;
   h4 {

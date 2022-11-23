@@ -5,7 +5,7 @@
   padding: 0 25px;
   border: 2px solid rgba(#272727, .1);
   border-radius: 10px;
-  background-color: transparent;
+  background-color: #fff;
   overflow: hidden;
   outline: none;
 
@@ -16,6 +16,12 @@
 
   &::placeholder {
     color: rgba(#272727, .4);
+  }
+
+  @media (max-width: 768px) {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px;
   }
 }
 
@@ -28,6 +34,12 @@
 
   & .input {
     padding-left: 90px;
+  }
+
+  @media (max-width: 768px) {
+    & .input {
+      padding-left: 70px;
+    }
   }
 }
 
@@ -50,6 +62,15 @@
     height: 30px;
     width: 2px;
     background-color: rgba(#272727, .1);
+  }
+
+  @media (max-width: 768px) {
+
+    left: 0;
+    &:after {
+      left: calc(100% + 10px);
+      height: 25px;
+    }
   }
 }
 

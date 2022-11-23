@@ -1,5 +1,9 @@
 .want {
   padding-top: 200px;
+
+  @media (max-width: $tablet) {
+    padding-top: 100px;
+  }
 }
 
 .want__title {
@@ -9,12 +13,27 @@
   & strong {
     font-weight: 500;
   }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 1.7rem;
+  }
 }
 
 .want__list {
   display: flex;
   gap: 30px;
   justify-content: space-around;
+
+  @media (max-width: $tablet) {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
 }
 
 .want__item {
@@ -24,11 +43,31 @@
   align-items: center;
   text-align: center;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1rem;
   gap: 20px;
+
+  @media (max-width: $tablet) {
+    gap: 10px;
+    width: 35%;
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+}
+
+.want__desc {
+
+  @media (max-width: $mobile) {
+    width: 80%;
+  }
 }
 
 .want__img {
   width: auto;
   max-height: 150px;
+
+  @media (max-width: $tablet) {
+    max-height: 80px;
+  }
 }

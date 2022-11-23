@@ -19,6 +19,16 @@
     background-repeat: no-repeat;
     background-size: contain
   }
+
+  @media (max-width: $desktop) {
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 80px;
+  }
 }
 
 
@@ -29,7 +39,7 @@
 .portfolio__subtitle {
   margin-bottom: 80px;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.222rem;
   font-weight: 300;
 }
 
@@ -83,7 +93,7 @@
 }
 
 .slider-portfolio__title {
-  font-size: 30px;
+  font-size: 1.667rem;
   font-weight: 600;
   margin: 0;
   margin-bottom: 10px;
@@ -110,7 +120,7 @@
 
 .slider-portfolio__sizes-list {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   justify-content: space-around;
   margin-bottom: 40px;
 }
@@ -127,23 +137,23 @@
   border-radius: 10px;
   background-color: $green;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.777rem;
   font-weight: 500;
 }
 
 .slider-portfolio__sizes-title {
-  font-size: 15px;
+  font-size: 0.833rem;
 }
 
 .slider-portfolio__do-title {
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 1.222rem;
 }
 
 .slider-portfolio__do-list {
   margin-left: 10px;
   margin-bottom: 30px;
-  font-size: 16px;
+  font-size: 0.88rem;
 }
 
 .slider-portfolio__btn-calc {
@@ -154,7 +164,7 @@
 
   & .btn-img__title {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.777rem;
     line-height: 1.4;
   }
 
@@ -169,6 +179,17 @@
     background-image: url("../img/calc.png");
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 1.8rem 1.2rem 5rem;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
