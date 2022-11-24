@@ -41,4 +41,4 @@ git clone SSH-адрес_вашего_форка
 
 ---
 
-[href]: https://vladpivovarov.github.io/bcky/build
+[href]: https://vladpivovarov.github.io/bochky/build
