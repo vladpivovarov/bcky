@@ -18,7 +18,8 @@ const videol = () => {
       const video = this;
 
       //Подмена src на кнопках
-      let srcImg = video.poster_;
+      let src = video.getAttribute("data-src");
+      let srcImg = "//img.youtube.com/vi/" + src + "/mqdefault.jpg";
       let parentBtn = btn.parentNode;
       let img = parentBtn.querySelector("img");
       img.setAttribute("src", srcImg);
@@ -66,7 +67,8 @@ const videol = () => {
       const video = this;
 
       //Подмена src на кнопках
-      let srcImg = video.poster_;
+      let src = video.getAttribute("data-src");
+      let srcImg = "//img.youtube.com/vi/" + src + "/mqdefault.jpg";
       let parentBtn = btn.parentNode;
       let img = parentBtn.querySelector("img");
       img.setAttribute("src", srcImg);
@@ -113,7 +115,8 @@ const videol = () => {
       const video = this;
 
       //Подмена src на кнопках
-      let srcImg = video.poster_;
+      let src = video.getAttribute("data-src");
+      let srcImg = "//img.youtube.com/vi/" + src + "/mqdefault.jpg";
       let parentBtn = btn.parentNode;
       let img = parentBtn.querySelector("img");
       img.setAttribute("src", srcImg);
@@ -160,7 +163,8 @@ const videol = () => {
       const video = this;
 
       //Подмена src на кнопках
-      let srcImg = video.poster_;
+      let src = video.getAttribute("data-src");
+      let srcImg = "//img.youtube.com/vi/" + src + "/mqdefault.jpg";
       let parentBtn = btn.parentNode;
       let img = parentBtn.querySelector("img");
       img.setAttribute("src", srcImg);
@@ -207,7 +211,8 @@ const videol = () => {
       const video = this;
 
       //Подмена src на кнопках
-      let srcImg = video.poster_;
+      let src = video.getAttribute("data-src");
+      let srcImg = "//img.youtube.com/vi/" + src + "/mqdefault.jpg";
       let parentBtn = btn.parentNode;
       let img = parentBtn.querySelector("img");
       img.setAttribute("src", srcImg);
@@ -254,7 +259,8 @@ const videol = () => {
       const video = this;
 
       //Подмена src на кнопках
-      let srcImg = video.poster_;
+      let src = video.getAttribute("data-src");
+      let srcImg = "//img.youtube.com/vi/" + src + "/mqdefault.jpg";
       let parentBtn = btn.parentNode;
       let img = parentBtn.querySelector("img");
       img.setAttribute("src", srcImg);

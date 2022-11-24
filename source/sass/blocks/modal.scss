@@ -4,7 +4,7 @@
   bottom: 0;
   left: -10000px;
   right: 10000px;
-  z-index: 4;
+  z-index: 6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,18 +30,18 @@
   color: #272727;
 
   @media (max-width: 768px) {
-    padding: 50px 40px;
+    padding: 40px 20px;
   }
 }
 
 .modal__title {
   margin-bottom: 40px;
-  font-size: 32px;
+  font-size: 1.777rem;
   font-weight: 600;
 
   @media (max-width: 768px) {
     margin-bottom: 30px;
-    font-size: 28px;
+    font-size: 1.555rem;
   }
 }
 
@@ -60,7 +60,7 @@
 
 .modal__input {
   width: 50%;
-  background-color: #e9e8e8;
+  background-color: #fff;
   height: 60px;
   line-height: 60px;
   padding: 0 30px;
@@ -74,7 +74,7 @@
   }
 
   &::placeholder {
-    color: #272727;
+    color: rgba(#272727, .5);
     text-align: center;
     font-size: 15px;
   }
@@ -111,6 +111,8 @@
     height: 50px;
     line-height: 50px;
     font-size: 13px;
+    border-radius: 10px;
+    padding-top: 1px;
   }
 }
 
@@ -155,13 +157,20 @@
   &:after {
     transform: translate(-50%, -50%) rotate(-45deg);
   }
+
+  @media (max-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .modal_shit {
 
+  transform: scale(0.8);
+
   .modal__inner {
     padding: 40px 50px;
-    background-image: url("../img/magazine-big.png");
+    background-image: url("../img/magazine-big.webp");
     background-repeat: no-repeat;
     background-position: bottom -220px left -50px;
     background-size: 180% auto;
@@ -189,5 +198,13 @@
     font-weight: 600;
     line-height: 1;
     font-size: 3.25rem;
+  }
+}
+
+.modal_ok p {
+  text-align: center;
+
+  &:last-child {
+    margin-top: 30px;
   }
 }

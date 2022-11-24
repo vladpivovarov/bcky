@@ -2,10 +2,21 @@
   position: relative;
   max-width: 80%;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 }
 
 .contact__map {
   height: 500px;
+
+  @media (max-width: 768px) {
+    height: 300px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
 }
 
 .contact__address {
@@ -27,7 +38,7 @@
     }
 
     & .contact__city {
-      margin-top: 20px;
+      margin-bottom: 20px;
     }
   }
 }

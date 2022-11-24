@@ -156,8 +156,6 @@
 }
 
 .header {
-  transition: background-color 0.3s;
-  background-color: rgba($green, 0);
 
   @media (max-width: $tablet) {
     position: absolute;

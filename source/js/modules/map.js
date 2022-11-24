@@ -24,8 +24,8 @@ const mapRealize = () => {
 
     function init() {
       var myMap = new ymaps.Map("map", {
-        center: [59.938635, 30.323118],
-        zoom: 18,
+        center: [45.005775, 38.931188],
+        zoom: 16,
         controls: ["zoomControl"],
         behaviors: ["drag"]
       });
@@ -41,7 +41,7 @@ const mapRealize = () => {
         placemarkCurrentOffset = placemarkOffset.desktop;
       }
 
-      var placemark = new ymaps.Placemark([59.938635, 30.323118], {
+      var placemark = new ymaps.Placemark([45.005775, 38.931188], {
         hintContent: "Выставка бань-бочек от Bochky® Вт-Сб с 10:00 до 18:00",
         balloonContent: balloonHtml
       }, {

@@ -22,7 +22,7 @@ const scroll = () => {
         });
 
         if (header.classList.contains("header_active")) {
-          header.classList.remove("header__active");
+          header.classList.remove("header_active");
           button.classList.remove("open");
         }
 
@@ -39,6 +39,10 @@ const scroll = () => {
 
   priceBtn.addEventListener("click", (e) => {
     e.preventDefault();
+
+    header.classList.remove("header_active");
+    button.classList.remove("open");
+
     const href = priceBtn.getAttribute("href");
     const section = document.querySelector(href);
 
@@ -50,21 +54,25 @@ const scroll = () => {
   })
 
 
-  const calcBtn = document.querySelector(".hero__btn");
+  const calcBtns = document.querySelectorAll(".btn_calc");
 
-  calcBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    const href = calcBtn.getAttribute("href");
-    const section = document.querySelector(href);
+  calcBtns.forEach((calcBtn) => {
+    calcBtn.addEventListener("click", (e) => {
+      e.preventDefault();
 
-    seamless.scrollIntoView(section, {
-      behavior: "smooth",
-      block: "start",
-      inline: "center",
-    });
+      header.classList.remove("header_active");
+      button.classList.remove("open");
 
+      const href = calcBtn.getAttribute("href");
+      const section = document.querySelector(href);
+
+      seamless.scrollIntoView(section, {
+        behavior: "smooth",
+        block: "start",
+        inline: "center",
+      });
+    })
   })
-
 }
 
 export default scroll;
